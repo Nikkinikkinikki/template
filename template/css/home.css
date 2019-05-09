@@ -1,0 +1,16 @@
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  overflow: auto;
+  margin-right:10%;
+
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:98%;
+    height:70px;
+
+}

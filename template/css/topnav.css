@@ -1,0 +1,55 @@
+.color-1{
+    color:#132238;
+    background-color: #132238 !important;
+}
+.color-2{
+    color: #364e68;
+}
+.color-3{
+    color: #98ccd3;
+}
+.color-4{
+    color: #ebf0f6;
+}
+
+.navbar{
+    padding-right: 0;
+}
+
+#avatar{
+    height: auto;
+    width:auto;
+    max-height: 50px;
+    max-width: 50px;
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    height: auto;
+    width: auto;
+    max-height: 80px;
+
+}
+
+.dropdown-menu{
+    width:100%;
+    border-style: none;
+}
+
+.dropdown-menu>a{
+    color: #ebf0f6;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+
+

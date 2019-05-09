@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+     <css src="../css/home.css">
+    <script src="/js/home"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<body style="font-family:'Lato',sans-serif; overflow-y:auto;">
+
+<div class="w3-container">
+
+<!-- begin of sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-light-blue w3-card" style="width:15%">
+
+  <div class="w3-button w3-large"> <a href="/home">Home </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/htmlintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/htmlbasic" class="w3-bar-item w3-button w3-large">Basic</a>
+
+      <a href="/htmlheading" class="w3-bar-item w3-button w3-large">Headings</a>
+      <!--
+              <a href="para.html" class="w3-bar-item w3-button w3-large">Paragraph</a>
+              <a href="list.html" class="w3-bar-item w3-button w3-large">Lists</a>
+              <a href="colours.html" class="w3-bar-item w3-button w3-large">Colours</a>
+
+      -->
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/cssintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/csssyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/csscolour" class="w3-bar-item w3-button w3-large">Colours</a>
+<!--
+      <a href="#" class="w3-bar-item w3-button w3-large">Margins</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Padding</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Height/Width</a>
+
+-->
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">JavaScript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/javaintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+
+      <a href="/javasyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/javavariable" class="w3-bar-item w3-button w3-large">Variables</a>
+
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large w3-blue">Web Server
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/php" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="/sql" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="/bottle" class="w3-bar-item w3-button w3-large w3-blue">Bottle</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">References
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button w3-large">HTML</a>
+      <a href="https://www.w3schools.com/css/default.asp" class="w3-bar-item w3-button w3-large">CSS</a>
+      <a href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-large">Javascript</a>
+      <a href="https://www.w3schools.com/php/default.asp" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="https://www.w3schools.com/sql/default.asp" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="https://bottlepy.org/docs/dev/" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of sidebar -->
+
+  <div class="main">
+    <h1>Bottle </h1>
+
+
+
+        <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+			<font size="-0.5">
+            <p>Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a single file module and has no dependencies other than the Python Standard Library.</p></font>
+    </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+		<font size="-0.9">
+		<ul><li>Routing: Requests to function-call mapping with support for clean and dynamic URLs.</li>
+		<li>Templates: Fast and pythonic built-in template engine and support for mako, jinja2 and cheetah templates.</li>
+		<li>Utilities: Convenient access to form data, file uploads, cookies, headers and other HTTP-related metadata.</li>
+		<li>Server: Built-in HTTP development server and support for paste, fapws3, bjoern, gae, cherrypy or any other WSGI capable HTTP server.</li></ul>
+        <h3>"hello world in  bottle"</h3>
+        <div class="w3-code htmlHigh notranslate w3-border-green">
+            <pre>from bottle import route, run, template
+
+@route('/hello/<name>')
+def index(name):
+    return template('<b>Hello {{name}}</b>!', name=name)
+
+run(host='localhost', port=8080)</pre>
+
+</font>
+           </div>
+</div>
+
+<hr>
+<!--start of content block -->
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> Extended Resources</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/g_9nsFJS_pk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!--start of content block -->
+
+
+
+
+  </div>
+</div>
+
+<!--
+<div>
+    <img src="logo.png" width="200" height="100" >
+    <p align="right">Web development tutorils</p>
+    <hr>
+</div>
+*/
+-->
+
+
+
+
+</body>
+</html>

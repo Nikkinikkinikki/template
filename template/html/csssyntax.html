@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<body style="font-family:'Lato',sans-serif; overflow-y:auto;">
+
+<!-- begin of sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-light-blue w3-card" style="width:15%">
+
+  <div class="w3-button w3-large"> <a href="/home">Home </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/htmlintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/htmlbasic" class="w3-bar-item w3-button w3-large">Basic</a>
+
+      <a href="/htmlheading" class="w3-bar-item w3-button w3-large">Headings</a>
+      <!--
+              <a href="para.html" class="w3-bar-item w3-button w3-large">Paragraph</a>
+              <a href="list.html" class="w3-bar-item w3-button w3-large">Lists</a>
+              <a href="colours.html" class="w3-bar-item w3-button w3-large">Colours</a>
+
+      -->
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large w3-blue">CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/cssintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/csssyntax" class="w3-bar-item w3-button w3-large w3-blue">Syntax</a>
+      <a href="/csscolour" class="w3-bar-item w3-button w3-large">Colours</a>
+<!--
+      <a href="#" class="w3-bar-item w3-button w3-large">Margins</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Padding</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Height/Width</a>
+
+-->
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">JavaScript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/javaintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+
+      <a href="/javasyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/javavariable" class="w3-bar-item w3-button w3-large">Variables</a>
+
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">Web Server
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/php" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="/sql" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="/bottle" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">References
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button w3-large">HTML</a>
+      <a href="https://www.w3schools.com/css/default.asp" class="w3-bar-item w3-button w3-large">CSS</a>
+      <a href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-large">Javascript</a>
+      <a href="https://www.w3schools.com/php/default.asp" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="https://www.w3schools.com/sql/default.asp" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="https://bottlepy.org/docs/dev/" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of sidebar -->
+
+  <div class="main">
+    <h1>CSS Syntax </h1>
+
+
+
+
+        <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+
+          <h4>Hello, this is CSS Syntax.</h4>
+          <font size="-0.5" ><p>In this section, we will teach you CSS syntax, colors, box model, styling of fonts,links, lists, button and table, overflow, Pseudo class and Pseudo elements.</p>
+          <p> Besides, you will also learned how to add border images, gradient, shadow, transition, style image and CSS responsive design.</p>
+
+            <p>A CSS rule-set consists of a selector and a declaration block:</p>
+			<p>h1 {{color:blue;font-size:12px;}}</p>
+			<p>The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+    </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h3>CSS Syntax Example</h3>
+        <font size="-0.9"><p></p>
+        <div class="w3-code htmlHigh notranslate w3-border-green">
+        <pre>
+        p {{
+				color:red;
+				text-align:center;
+        }}</pre>
+        </div>
+        <iframe width="500" height="340"
+      	src="https://www.youtube.com/embed/1CqHws4WZ-M">
+        </iframe>
+
+</div>
+
+<hr>
+<!--start of content block -->
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> Styling of elements</h3>
+    <h4> CSS Font</h4>
+    <font size="-0.9"><p>The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+    <p>TIn CSS, there are two types of font family names:</p>
+    <p>generic family - a group of font families with a similar look (like "Serif" or "Monospace")</p>
+    <p>font family - a specific font family (like "Times New Roman" or "Arial")</p>
+    <head>
+
+
+    <table style="width:100%">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>font</td>
+    <td>Sets all the font properties in one declaration</td>
+  </tr>
+  <tr>
+    <td>font-family</td>
+    <td>Specifies the font family for text</td>
+  </tr>
+  <tr>
+    <td>font-size</td>
+    <td>Specifies the font size of text</td>
+  </tr>
+  <tr>
+    <td>font-style</td>
+    <td>Specifies the font style of text</td>
+  </tr>
+  <tr>
+    <td>font-variant</td>
+    <td>Specifies whether or not a text should be displayed in a small-caps font</td>
+  </tr>
+  <tr>
+    <td>font-weight</td>
+    <td>Specifies the weight of a font</td>
+  </tr>
+</table>
+<h4> CSS Links</h4>
+<font size="-0.9"><p>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</p>
+<p>In addition, links can be styled differently depending on what state they are in.</p>
+<p>The four links states are:</p>
+<p>a:link - a normal, unvisited link</p>
+<p>a:visited - a link the user has visited</p>
+<p>a:hover - a link when the user mouses over it</p>
+<p>a:active - a link the moment it is clicked</p>
+<div class="w3-code htmlHigh notranslate w3-border-green">
+<pre>
+a:link {{
+  color:red;
+}}
+a:visited {{
+  color:green
+}}
+a:hover {{
+  color:hotpink;
+}}
+a:active {{
+  color:blue;
+}}</pre>
+</div>
+<h4> CSS Lists</h4>
+<font size="-0.9"><p>In HTML, there are two main types of lists:</p>
+<p>unordered lists (&ltul&gt;) - the list items are marked with bullets</p>
+<p>ordered lists (&ltol&gt;) - the list items are marked with numbers or letters</p>
+<p>The CSS list properties allow you to:</p>
+<p>Set different list item markers for ordered lists</p>
+<p>Set different list item markers for unordered lists</p>
+<p>Set an image as the list item marker</p>
+<p>Add background colors to lists and list items</p>
+<div class="w3-code htmlHigh notranslate w3-border-green">
+<pre>
+ul.a {{
+  list-style-type:circle;
+}}
+ul.b {{
+  list-style-type:square;
+}}
+ol.c {{
+  list-style-type:upper-roman;
+}}
+ol.d{{
+  list-style-type: lower-alpha;
+}}</pre>
+</div>
+<p>for more information,see the vedio below:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-AyiZNtT4JE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4> CSS Table</h4>
+<font size="-0.9"><p><b>Table Borders</b> To specify table borders in CSS, use the border property.
+
+The example below specifies a black border for &lttable&gt;, &ltth&gt;, and &lttd&gt; elements:</p>
+  <!--html headings example -->
+  <div class="w3-code htmlHigh notranslate w3-border-green">
+<pre>
+table,th,td{{
+    border:1px solid black;
+}}</pre>
+</div>
+<p><b>Collapse Table Borders</b> The border-collapse property sets whether the table borders should be collapsed into a single border:</p>
+  <!--html headings example -->
+  <div class="w3-code htmlHigh notranslate w3-border-green">
+<pre>
+table{{
+    border-collapse:collapse;
+}}
+
+table,th,td{{
+    border:1 px solid black;
+}}</pre>
+</div>
+
+</div>
+
+
+
+
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> CSS Box Model</h3>
+    <font size="-0.9"><p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+    <p>Explanation of the different parts:</p>
+    <p>Content - The content of the box, where text and images appear</p>
+    <p>Padding - Clears an area around the content. The padding is transparent</p>
+    <p>Border - A border that goes around the padding and content</p>
+    <p>Margin - Clears an area outside the border. The margin is transparent</p>
+    <p>The box model allows us to add a border around elements, and to define space between elements.</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    width:300px;
+    border:15px solid green;
+    padding:50px;
+    margin:20px;
+  }}</pre>
+    </div>
+
+</div>
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> CSS Overflow</h3>
+    <font size="-0.9"><p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+    <p>The overflow property has the following values:</p>
+    <p>visible - Default. The overflow is not clipped. The content renders outside the element's box</p>
+    <p>hidden - The overflow is clipped, and the rest of the content will be invisible</p>
+    <p>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</p>
+    <p>auto - Similar to scroll, but it adds scrollbars only when necessary</p>
+    <p><b>Overflow:visible</b> By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    width:200px;
+    height:50px;
+    background-color:#eee;
+    overflow:visible;
+    }}</pre>
+    </div>
+    <p><b>Overflow:hidden</b> With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    overflow:hidden;
+    }}</pre>
+    </div>
+    <p><b>Overflow:scroll</b> Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    overflow:scroll;
+    }}</pre>
+    </div>
+    <p><b>Overflow:auto</b> The auto value is similar to scroll, but it adds scrollbars only when necessary:</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    overflow:auto;
+    }}</pre>
+    </div>
+
+</div>
+
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> CSS Pseudo-classes and Pseudo-elements</h3>
+    <font size="-0.9"><p>A pseudo-class is used to define a special state of an element.</p>
+    <p>For example, it can be used to:</p>
+    <p>Style visited and unvisited links differently</p>
+    <p>Style an element when it gets focus</p>
+    <p>Style an element when a user mouses over it</p>
+    <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+    <p>For example, it can be used to:</p>
+    <p>Style the first letter, or line, of an element
+Insert content before, or after, the content of an element</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>selector:pseudo-class {{
+    property:value;
+  }}</pre>
+    </div>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>selector:pseudo-element {{
+    property:value;
+  }}</pre>
+    </div>
+
+  </div>
+
+  <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+      <h3>CSS Image</h3>
+      <font size="-0.9"><p>Image Gallery example</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+      <pre>
+      &lthtml&gt;
+      &lthead&gt;
+      &ltstyle&gt;
+      div.gallery {{
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }}
+      div.gallery:hover {{
+        border: 1px solid #777;
+      }}
+      div.gallery img {{
+        width: 100%;
+        height: auto;
+      }}
+      div.desc {{
+        padding: 15px;
+        text-align: center;
+      }}
+      &lt/style&gt;
+      &lt/head&gt;
+      &ltbody&gt;
+      &ltdiv class="gallery"&gt;
+      &lta target="_blank" href="img_5terre.jpg"&gt;
+      &ltimg src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400"&gt;
+      &lt/a&gt;
+      &ltdiv class="desc">Add a description of the image here&lt/div&gt;
+      &lt/div&gt;
+      &ltdiv class="gallery"&gt;
+      &lta target="_blank" href="img_forest.jpg"&gt;
+      &ltimg src="img_forest.jpg" alt="Forest" width="600" height="400"&gt;
+      &lt/a&gt;
+      &ltdiv class="desc"&gt;Add a description of the image here&lt/div&gt;
+      &lt/div&gt;
+
+      &ltdiv class="gallery"&gt;
+      &lta target="_blank" href="img_lights.jpg"&gt;
+      &ltimg src="img_lights.jpg" alt="Northern Lights" width="600" height="400"&gt;
+      &lt/a&gt;
+      &ltdiv class="desc"&gt;Add a description of the image here&lt/div&gt;
+      &lt/div&gt;
+
+      &ltdiv class="gallery"&gt;
+      &lta target="_blank" href="img_mountains.jpg"&gt;
+      &ltimg src="img_mountains.jpg" alt="Mountains" width="600" height="400"&gt;
+      &lt/a&gt;
+      &ltdiv class="desc"&gt;Add a description of the image here&lt/div&gt;
+      &lt/div&gt;
+
+      &lt/body&gt;
+      &lt/html&gt;</pre>
+      </div>
+
+      <p>Image Sprites example</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+      <pre>
+      #home {{
+          width:46px;
+          height:44px;
+          background:url(img_navsprites.gif) 0 0;
+      }}</pre>
+
+</div>
+
+<!--start of content block -->
+
+  </div>
+
+
+
+
+  <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+      <h3> CSS Effects </h3>
+      <font size="-0.9"><p><b>CSS Borders </b> allow you to specify the style, width, and color of an element's border.</p>
+      <p>Border style: what kind of border to display.</p>
+      <p>dotted - Defines a dotted border.
+dashed - Defines a dashed border.
+solid - Defines a solid border.
+double - Defines a double border.
+groove - Defines a 3D grooved border. The effect depends on the border-color value.
+ridge - Defines a 3D ridged border. The effect depends on the border-color value.
+inset - Defines a 3D inset border. The effect depends on the border-color value.
+outset - Defines a 3D outset border. The effect depends on the border-color value.
+none - Defines no border.
+hidden - Defines a hidden border. </p>
+      <p>Border-width:the width of the four borders.</p>
+      <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+      <p>Border-color: set the color of the four borders.</p>
+      <p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border).
+If border-color is not set, it inherits the color of the element.</p>
+      <p><b>CSS Margins </b> create space around elements, outside of any defined borders.</p>
+      <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+      <pre>
+        p{{
+          margin-top:100px;
+          margin-button:100px;
+          margin-right:150px;
+          margin-left:80px;
+        }}</pre>
+
+    </div>
+    <p><b>CSS Gradients</b></p>
+    <p>CSS gradients let you display smooth transitions between two or more specified colors.</p>
+    <p>CSS defines two types of gradients:</p>
+    <p>Linear Gradients (goes down/up/left/right/diagonally)<p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>
+      #grad{{
+        background-image:linear-gradient(red,yellow);
+      }}</pre>
+    </div>
+    <p>Radial Gradients (defined by their center)<p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+      <pre>
+        #grad{{
+          background-image:linear-gradient(to right, red ,yellow);
+        }}</pre>
+      </div>
+    <p><b>CSS Shadow Effects</b></p>
+    <p>The CSS text-shadow property applies shadow to text.</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>
+      h1{{
+        text-shadow:2px 2px 5px red;
+      }}
+    </div>
+    <p><b>CSS Transitions</b></p>
+    <p>CSS transitions allows you to change property values smoothly (from one value to another), over a given duration.</p>
+    <p>To create a transition effect, you must specify two things:</p>
+    <p>the CSS property you want to add an effect to</p>
+    <p>the duration of the effect</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>
+      div{{
+        width: 100px;
+        height: 100px;
+        background: red;
+        -webkit-transition: width 2s;
+        transition: width 2s;
+      }}
+</div>
+
+
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3> Responsible web design</h3>
+    <font size="-0.9"><p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+    <p>Explanation of the different parts:</p>
+    <p>Content - The content of the box, where text and images appear</p>
+    <p>Padding - Clears an area around the content. The padding is transparent</p>
+    <p>Border - A border that goes around the padding and content</p>
+    <p>Margin - Clears an area outside the border. The margin is transparent</p>
+    <p>The box model allows us to add a border around elements, and to define space between elements.</p>
+    <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>div {{
+    width:300px;
+    border:15px solid green;
+    padding:50px;
+    margin:20px;
+  }}</pre>
+    </div>
+
+<!--
+<div>
+    <img src="logo.png" width="200" height="100" >
+    <p align="right">Web development tutorils</p>
+    <hr>
+</div>
+*/
+-->
+
+
+
+
+</body>
+</html>

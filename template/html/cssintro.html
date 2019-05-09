@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body style="font-family:'Lato',sans-serif; overflow-y:auto;">
+
+<!-- begin of sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-light-blue w3-card" style="width:15%">
+
+  <div class="w3-button w3-large"> <a href="/home">Home </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/htmlintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/htmlbasic" class="w3-bar-item w3-button w3-large">Basic</a>
+
+      <a href="/htmlheading" class="w3-bar-item w3-button w3-large">Headings</a>
+      <!--
+              <a href="para.html" class="w3-bar-item w3-button w3-large">Paragraph</a>
+              <a href="list.html" class="w3-bar-item w3-button w3-large">Lists</a>
+              <a href="colours.html" class="w3-bar-item w3-button w3-large">Colours</a>
+
+      -->
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large w3-blue">CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/cssintro" class="w3-bar-item w3-button w3-large w3-blue">Introduction</a>
+      <a href="/csssyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/csscolour" class="w3-bar-item w3-button w3-large">Colours</a>
+<!--
+      <a href="#" class="w3-bar-item w3-button w3-large">Margins</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Padding</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Height/Width</a>
+
+-->
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">JavaScript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/javaintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+
+      <a href="/javasyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/javavariable" class="w3-bar-item w3-button w3-large">Variables</a>
+
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">Web Server
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/php" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="/sql" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="/bottle" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">References
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button w3-large">HTML</a>
+      <a href="https://www.w3schools.com/css/default.asp" class="w3-bar-item w3-button w3-large">CSS</a>
+      <a href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-large">Javascript</a>
+      <a href="https://www.w3schools.com/php/default.asp" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="https://www.w3schools.com/sql/default.asp" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="https://bottlepy.org/docs/dev/" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of sidebar -->
+
+  <div class="main">
+        <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+          <h4>Learn CSS with WDT(Web Development Tutotials)</h4>
+          <font size="-0.5" ><p>Hi, in this section, we will teach you how to describe the style of an HTML document. </p>
+           <p>To make thing easier to understand, the CSS section of the website is structured into 2 subsection.</p>
+           <ol><li>"CSS Syntax" gives you a basic understanding with structures of websites, including elements, attributes, heading, paragraphs, styles, images, tables, lists .etc</li>
+             <li>"CSS colours" shows more advanced contents in terms of HTML. The section covers linking CSS file to HTML, layout, responsible web design, to  building HTML form and understanding HTML5. etc. If you already have a basic understanding about HTML and looking for something to challenge youself, go for it!
+             </li></ol>
+    </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h4>What is CSS?</h4>
+        <font size="-0.9">
+        <P>CSS stands for Cascading Style Sheets</p>
+        <P>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.CSS saves a lot of work. It can control the layout of multiple web pages all at once</p>
+        <p>External stylesheets are stored in CSS files</p>
+        <h4><b>Building your first CSS</b></h4>
+          <p><b>CSS Example</b> are defined with the &lth1&gt; to &lth6&gt; tags.
+          &lth1&gt; defines the most important heading. &lth6&gt; defines the least important heading:</p>
+            <!--html headings example -->
+          <div class="w3-code htmlHigh notranslate w3-border-green">
+          <pre>
+          body {{
+            background-color: lightblue;
+          }}
+          h1 {{
+          color: white;
+          text-align: center;
+          }}
+          p {{
+          font-family: verdana;
+          font-size: 20px;
+          }}
+          </pre>
+          </div>
+
+
+   </div>
+   <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+       <h3> Why Use CSS?</h3>
+       <font size="-0.9">
+       <P>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. </p>
+   <P>CSS Solved a Big Problem</p>
+   <P>When tags like font, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+   To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+   	<p>CSS Saves a Lot of Work!</p>
+   	<p>The style definitions are normally saved in external .css files. With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+   </div>
+   <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+       <h3> How to insert CSS?</h3>
+       <P>There are three ways of inserting a style sheet: External style sheet, Internal style sheet, Inline style.</p>
+         <p><b>External Style Sheet Example</b> With an external style sheet, you can change the look of an entire website by changing just one file!
+Each page must include a reference to the external style sheet file inside the &ltlink&gt; element. The &ltlink&gt; element goes inside the &lthead&gt; section:</p>
+           <!--html headings example -->
+         <div class="w3-code htmlHigh notranslate w3-border-green">
+         <pre>
+         &lthead&gt;
+         &ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+         &lt/head&gt;
+         </pre>
+       </div>
+         <p><b>Internal Style Sheet Example</b> An internal style sheet may be used if one single page has a unique style.
+
+Internal styles are defined within the &ltstyle&gt; element, inside the &lthead&gt; section of an HTML page:</p>
+           <!--html headings example -->
+         <div class="w3-code htmlHigh notranslate w3-border-green">
+         <pre>
+         &lthead&gt;
+         &ltstyle&gt;
+         body{{
+           background-color: linen;
+         }}
+         h1{{
+           color:maroon;
+           margin-left:40px;
+          &lt/style&gt;
+         &lt/head&gt;
+         </pre>
+   </div>
+   <p><b>Inline Styles</b> An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+The example below shows how to change the color and the left margin of a &lth1&gt; element: </p>
+     <!--html headings example -->
+   <div class="w3-code htmlHigh notranslate w3-border-green">
+   <pre>
+   &lth1 style="color:blue;margin-left:30px;"&gt;This is a heading &lt/h1&gt;
+   </pre>
+</div>
+</div>
+
+<hr>
+<!--start of content block -->
+
+<!--start of content block -->
+
+
+
+
+
+
+<!--
+<div>
+    <img src="logo.png" width="200" height="100" >
+    <p align="right">Web development tutorils</p>
+    <hr>
+</div>
+*/
+-->
+
+
+
+
+</body>
+</html>

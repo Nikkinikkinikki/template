@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:'Lato',sans-serif; overflow-y:auto;">
+<!-- begin of sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-light-blue w3-card" style="width:15%">
+
+  <div class="w3-button w3-large"> <a href="#">Home </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/htmlintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/htmlbasic" class="w3-bar-item w3-button w3-large">Basic</a>
+
+      <a href="/htmlheading" class="w3-bar-item w3-button w3-large">Headings</a>
+      <!--
+              <a href="para.html" class="w3-bar-item w3-button w3-large">Paragraph</a>
+              <a href="list.html" class="w3-bar-item w3-button w3-large">Lists</a>
+              <a href="colours.html" class="w3-bar-item w3-button w3-large">Colours</a>
+
+      -->
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/cssintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="/csssyntax" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="/csscolour" class="w3-bar-item w3-button w3-large">Colours</a>
+<!--
+      <a href="#" class="w3-bar-item w3-button w3-large">Margins</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Padding</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Height/Width</a>
+
+-->
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large w3-blue">JavaScript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/javaintro" class="w3-bar-item w3-button w3-large">Introduction</a>
+
+      <a href="/javasyntax" class="w3-bar-item w3-button w3-large w3-blue">Syntax</a>
+      <a href="/javavariable" class="w3-bar-item w3-button w3-large">Variables</a>
+
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">Web Server
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="/php" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="/sql" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="/bottle" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">References
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button w3-large">HTML</a>
+      <a href="https://www.w3schools.com/css/default.asp" class="w3-bar-item w3-button w3-large">CSS</a>
+      <a href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-large">Javascript</a>
+      <a href="https://www.w3schools.com/php/default.asp" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="https://www.w3schools.com/sql/default.asp" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="https://bottlepy.org/docs/dev/" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of sidebar -->
+
+  <div class="main">
+    <h1>JavaScript Syntax</h1>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+      <h4>Example explained</h4>
+      <font size="-0.5">
+      <P>Every line of code that runs in Java must be inside a class. In our example, we named the class MyClass. A class should always start with an uppercase first letter.</p>
+        <p>Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning.</p>
+        <P>The name of the java file must match the class name. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Javar</p>
+          <div class="w3-code htmlHigh notranslate w3-border-green">
+            <pre>
+              public class Myclass{{
+              public static void main(String[] args){{
+			             System.out.println("Hello World");
+			        }}
+              }}</pre>
+          </div>
+    </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h3>Java Function and Events</h3>
+        <font size="-0.5">
+          <div class="w3-code htmlHigh notranslate w3-border-green">
+        <pre>
+          function myFunction(p1, p2) {{
+            return p1 * p2;
+          }}
+        </pre>
+      </div>
+      <p><b>JavaScript Function Syntax</b></p>
+        <P>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</p>
+    	<p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+        <P>The parentheses may include parameter names separated by commas:
+(parameter1, parameter2, ...)</p>
+    	<p>The code to be executed, by the function, is placed inside curly brackets: {{}}</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+    <pre>
+      function name(parameter1, parameter2, parameter3) {{
+        //code to be executed
+      }}</pre>
+    </div>
+    <p><b>Why Functions?</b></p>
+    <p>You can reuse code: Define the code once, and use it many times.</p>
+    <p>You can use the same code many times with different arguments, to produce different results.</p>
+  </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h3>JavaScripts Output</h3>
+        <font size="-0.5">
+        <P>When JavaScript reaches a return statement, the function will stop executing.</p>
+    	<p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+      <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+        <pre>
+        var x = myFunction(4, 3);
+    	  function myFunction(a, b) {{
+          return a * b;
+        }}</pre>
+    </div>
+    <p>for more information, please watch the video:</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/soIRiNzsF78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h3>Insertion of java scripts in HTML file or Java Scripts in external files</h3>
+        <font size="-0.5">
+        <P><b>Insertion of java scripts in HTML file</b></p>
+    	<p>&ltscript&gt; - tag is used to define a client-side script, such as a JavaScript.</p>
+    	<p>type - specify the type of the script</p>
+      <p>src - script file name and path</p>
+      <div class="w3-code htmlHigh notranslate w3-border-green">
+      <pre>
+        &ltscript type="text/javascript" src="jquery-3.3.1.js"&gt;&lt/script&gt;
+        &ltscript src="js/YourExternalJQueryScripts.js"&gt;&lt/script&gt;
+        </pre>
+      </div>
+        <P><b>Java Scripts in external files</b></p>
+          <p>Importing an external javascript file</p>
+          <p>First, the file you are importing must be valid JavaScript, and only JavaScript</p>
+          <p>Second, the file must have the file extension ".js". Lastly, you must know the location of the file.</p>
+          <p>Let us assume we have a file "myjs.js" that contains a one line Hello World alert function. Also, let us assume that the file is the same directory as the HTML file we are going to code up. To import the file you would do the following in your HTML document.</p>
+          <P><b>File myjs.js Contents:</b></p>
+            <div class="w3-code htmlHigh notranslate w3-border-green">
+            <pre>
+              function popup() {{
+                alert("Hello World")
+              }}
+            </pre>
+          </div>
+          <p><b>HTML & JavaScript Code:</b></p>
+          <div class="w3-code htmlHigh notranslate w3-border-green">
+          <pre>
+            &lthtml&gt;
+            &lthead&gt;
+            &ltscript src="myjs.js"&gt;
+            &lt/script&gt;
+            &lt/head&gt;
+            &ltbody&gt;
+            &ltinput type="button" onclick="popup()" value="Click Me!"&gt;
+            &lt/body&gt;
+            &lt/html&gt;
+          </pre>
+        </div>
+
+
+    </div>
+</div>
+
+<hr>
+<!--start of content block -->
+
+<!--start of content block -->
+
+
+
+
+  </div>
+</div>
+
+<!--
+<div>
+    <img src="logo.png" width="200" height="100" >
+    <p align="right">Web development tutorils</p>
+    <hr>
+</div>
+*/
+-->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  overflow-y: auto;
+}
+
+/* Fixed sidenav, full height */
+
+
+
+/* Main content */
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  overflow: scroll;
+  margin-right:10%;
+
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:98%;
+    height:70px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <img src="../img/logo.png" width="200" height="100" >
+    <div class="w3-right w3-hide-small w3-wide w3-large" style="font-family:'Segoe UI',Arial,sans-serif; margin-top: 70px;">WEB DEVELOPMENT TUTORIALS</div>
+    <div class="w3-padding w3-large w3-cyan" id="mynavi" >
+
+    <a href="htmlt1.html"><i class="material-icons w3-xxxlarge" href="w3home.html">home</i> </a>
+
+    <div class="w3-dropdown-hover w3-right">
+    <button class="w3-button">
+    <i class="material-icons w3-right w3-xxlarge">person</i>
+</button>
+
+<div class="w3-dropdown-content w3-bar-block w3-light-blue">
+<a href="#" class="w3-bar-item w3-button">Message</a>
+<a href="#" class="w3-bar-item w3-button">Profile</a>
+<a href="#" class="w3-bar-item w3-button">Logout</a>
+</div>
+
+    </div>
+
+ </div>
+<!-- begin of sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-light-blue w3-card" style="width:15%">
+
+  <div class="w3-button w3-large"> <a href="htmlt1.html">Home </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large w3-blue">HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+        <a href="htmlintro.html" class="w3-bar-item w3-button w3-large w3-blue">Introduction</a>
+        <a href="basic.html" class="w3-bar-item w3-button w3-large">Basic</a>
+
+        <a href="heading.html" class="w3-bar-item w3-button w3-large">Headings</a>
+        <a href="para.html" class="w3-bar-item w3-button w3-large">Paragraph</a>
+        <a href="list.html" class="w3-bar-item w3-button w3-large">Lists</a>
+        <a href="colours.html" class="w3-bar-item w3-button w3-large">Colours</a>
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="../css/cssintro.html" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Colours</a>
+
+      <a href="#" class="w3-bar-item w3-button w3-large">Margins</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Padding</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Height/Width</a>
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">JavaScript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="../javascript/javaintro.html" class="w3-bar-item w3-button w3-large">Introduction</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Statements</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Syntax</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Variables</a>
+
+      <a href="#" class="w3-bar-item w3-button w3-large">Data Types</a>
+      <a href="#" class="w3-bar-item w3-button w3-large">Functions</a>
+
+
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">Web Server
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="../webserver/wsphp.html" class="w3-bar-item w3-button w3-large">PHP</a>
+      <a href="../webserver/wssql.html" class="w3-bar-item w3-button w3-large">SQL</a>
+      <a href="../webserver/wsbot.html" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-large">References
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+        <a href="https://www.w3schools.com/html/default.asp" class="w3-bar-item w3-button w3-large">HTML</a>
+        <a href="https://www.w3schools.com/css/default.asp" class="w3-bar-item w3-button w3-large">CSS</a>
+        <a href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-large">Javascript</a>
+        <a href="https://www.w3schools.com/php/default.asp" class="w3-bar-item w3-button w3-large">PHP</a>
+        <a href="https://www.w3schools.com/sql/default.asp" class="w3-bar-item w3-button w3-large">SQL</a>
+        <a href="https://bottlepy.org/docs/dev/" class="w3-bar-item w3-button w3-large">Bottle</a>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of sidebar -->
+
+  <div class="main">
+    <h1>Introduction to HTML </h1>
+
+
+<hr>
+        <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+            <h2>What is HTML?</h2>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+            <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+              <li>HTML describes the structure of Web pages using markup</li>
+              <li>HTML elements are the building blocks of HTML pages</li>
+              <li>HTML elements are represented by tags</li>
+              <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+              <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+            </ul>
+
+    </div>
+    <hr>
+
+    <div class="w3-panel w3-pale-blue w3-round-xlarge" >
+        <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh">
+         <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+         <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My first paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+         </div>
+</div>
+
+<hr>
+<!--start of content block -->
+<div class="w3-panel w3-pale-blue w3-round-xlarge" >
+    <h3>Example Explained</h3>
+    <ul>
+    <li>The <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> declaration defines this document to be HTML5</li>
+    <li>The <code class="w3-codespan">&lt;html&gt;</code> element is the root element of an HTML
+    page</li>
+     <li>The <code class="w3-codespan">&lt;head&gt;</code> element contains meta information about the document</li>
+     <li>The <code class="w3-codespan">&lt;title&gt;</code> element specifies a title for the document</li>
+     <li>The <code class="w3-codespan">&lt;body&gt;</code> element contains the visible page content</li>
+     <li>The <code class="w3-codespan">&lt;h1&gt;</code> element defines a large heading</li>
+     <li>The <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph</li>
+    </ul>
+
+
+</div>
+<!--start of content block -->
+
+  </div>
+</div>
+
+<!--
+<div>
+    <img src="logo.png" width="200" height="100" >
+    <p align="right">Web development tutorils</p>
+    <hr>
+</div>
+*/
+-->
+
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mynavi");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
