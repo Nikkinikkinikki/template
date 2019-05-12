@@ -11,10 +11,9 @@ import random
 import urllib3
 import selenium
 
-options = webdriver.ChromeOptions()  
-options.binary_location = '/usr/bin/google-chrome-stable'
+options = Options()  
 options.headless = True
-driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/local/bin/chromedriver')
+driver = webdriver.Firefox(options=options)
 driver.get('http://itispw00051.srv.sydney.edu.au:8080/') 
 URL = "http://itispw00051.srv.sydney.edu.au:8080/"
 #URL = "http://www.google.com.au/"
