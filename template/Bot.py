@@ -14,7 +14,7 @@ import selenium
 options = webdriver.ChromeOptions()  
 options.binary_location = '/usr/bin/google-chrome-stable'
 options.headless = True
-driver = webdriver.Chrome(chrome_options=options, executable_path='/opt/google/drivers/chromedriver')
+driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/local/bin/chromedriver')
 driver.get('http://itispw00051.srv.sydney.edu.au:8080/') 
 URL = "http://itispw00051.srv.sydney.edu.au:8080/"
 #URL = "http://www.google.com.au/"
