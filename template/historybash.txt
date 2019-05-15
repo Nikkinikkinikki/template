@@ -1,0 +1,1000 @@
+   52  echo S1557770269950M;rpm -qf "/usr/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770269950M
+   53  echo S1557770269997M;rpm -qf "/usr/sbin/nscd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770269997M
+   54  echo S1557770270029M;rpm -qf "/usr/sbin/gssproxy" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270029M
+   55  echo S1557770270060M;rpm -qf "/usr/sbin/rpc.gssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270060M
+   56  echo S1557770270107M;rpm -qf "/usr/libexec/sssd/sssd_be" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270107M
+   57  echo S1557770270154M;rpm -qf "/opt/fireeye/bin/xagt" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270154M
+   58  echo S1557770270185M;rpm -qf "/usr/libexec/sssd/sssd_nss" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270185M
+   59  echo S1557770270232M;rpm -qf "/usr/libexec/sssd/sssd_pam" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270232M
+   60  echo S1557770270263M;rpm -qf "/usr/lib/systemd/systemd-logind" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270263M
+   61  echo S1557770270310M;rpm -qf "/usr/sbin/atd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270310M
+   62  echo S1557770270341M;rpm -qf "/usr/sbin/crond" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270341M
+   63  echo S1557770270372M;rpm -qf "/sbin/agetty" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270372M
+   64  echo S1557770270419M;rpm -qf "/usr/bin/python2" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270419M
+   65  echo S1557770270450M;rpm -qf "/usr/sbin/oddjobd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270450M
+   66  echo S1557770270497M;rpm -qf "/usr/sbin/rsyslogd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270497M
+   67  echo S1557770270529M;rpm -qf "/usr/sbin/sshd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270529M
+   68  echo S1557770270560M;rpm -qf "/usr/bin/rhsmcertd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270560M
+   69  echo S1557770270607M;rpm -qf "/usr/libexec/postfix/master" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270607M
+   70  echo S1557770270638M;rpm -qf "/usr/sbin/abrt-dbus" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557770270638M
+   71  echo S1557770270794M;cat /etc/passwd ; echo ERROR_CODE:$?;echo E1557770270794M
+   72  echo S1557770270794M;rpm -qa --qf '%{NAME}~%{VERSION}~%{GROUP}~%{VENDOR}~%{installtime:date}~%{INSTALLTID}\n' ; echo ERROR_CODE:$?;echo E1557770270794M
+   73  echo S1557770271810M;uname -a ; echo ERROR_CODE:$?;echo E1557770271810M
+   74  echo S1557770271825M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557770271825M
+   75  echo S1557770271825M;cat "/etc/redhat-release" ; echo ERROR_CODE:$?;echo E1557770271825M
+   76  echo S1557770271841M;ls /sys/class/fc_host/* -d -1 ; echo ERROR_CODE:$?;echo E1557770271841M
+   77  echo S1557770271841M;uname;echo E1557770271841M
+   78  echo S1557770271841M;/bin/netstat -nap ; echo ERROR_CODE:$?;echo E1557770271841M
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd template
+   83  ls
+   84  python run.py
+   85  echo END_CMD_MARKER
+   86  echo S1557821252400M;uname;echo E1557821252400M
+   87  echo S1557821252400M;ver;echo E1557821252400M
+   88  echo S1557821252400M;cmd.exe /c ver;echo E1557821252400M
+   89  echo S1557821252416M;ioscli uname -a;echo E1557821252416M
+   90  echo S1557821252416M;uname;echo E1557821252416M
+   91  echo S1557821252432M;echo $SHELL;echo E1557821252432M
+   92  echo S1557821252432M;echo $?;echo E1557821252432M
+   93  echo S1557821252447M;uname ; echo ERROR_CODE:$?;echo E1557821252447M
+   94  echo S1557821252447M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557821252447M
+   95  echo S1557821252478M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557821252478M
+   96  echo S1557821252478M;set ComSpec ; echo ERROR_CODE:$?;echo E1557821252478M
+   97  echo S1557821252494M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557821252494M
+   98  echo S1557821252510M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557821252510M
+   99  echo S1557821252510M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557821252510M
+  100  echo S1557821252525M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557821252525M
+  101  echo S1557821252572M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557821252572M
+  102  echo S1557821252572M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557821252572M
+  103  echo S1557821252572M;set ComSpec ; echo ERROR_CODE:$?;echo E1557821252572M
+  104  echo S1557821252572M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557821252572M
+  105  echo S1557821252572M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557821252572M
+  106  echo S1557821252588M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557821252588M
+  107  echo S1557821252588M;echo ~;echo E1557821252588M
+  108  echo S1557821252588M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821252588M
+  109  echo S1557821252807M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821252807M
+  110  echo S1557821253010M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821253010M
+  111  echo S1557821253213M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821253213M
+  112  echo S1557821253416M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821253416M
+  113  echo S1557821253619M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557821253619M
+  114  echo S1557821253619M;hostname ; echo ERROR_CODE:$?;echo E1557821253619M
+  115  echo S1557821253619M;rpm -qa | grep f5base ; echo ERROR_CODE:$?;echo E1557821253619M
+  116  echo S1557821254494M;vmware -v ; echo ERROR_CODE:$?;echo E1557821254494M
+  117  echo S1557821254510M;cat /etc/resolv.conf ; echo ERROR_CODE:$?;echo E1557821254510M
+  118  echo S1557821254510M;ps aux | grep dhclient | grep -v grep ; echo ERROR_CODE:$?;echo E1557821254510M
+  119  echo S1557821254525M;/sbin/ip addr show ; echo ERROR_CODE:$?;echo E1557821254525M
+  120  echo S1557821254541M;ls /proc/net/bonding ; echo ERROR_CODE:$?;echo E1557821254541M
+  121  echo S1557821254541M;uptime && date -u '+%Y-%m-%d %H:%M:%S' ; echo ERROR_CODE:$?;echo E1557821254541M
+  122  echo S1557821254541M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557821254541M
+  123  echo S1557821254557M;dmesg | grep ens192 | grep -i Up ; echo ERROR_CODE:$?;echo E1557821254557M
+  124  echo S1557821254572M;mii-diag ens192 ; echo ERROR_CODE:$?;echo E1557821254572M
+  125  echo S1557821254572M;uname -r ; echo ERROR_CODE:$?;echo E1557821254572M
+  126  echo S1557821254572M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557821254572M
+  127  echo S1557821254572M;hostname ; echo ERROR_CODE:$?;echo E1557821254572M
+  128  echo S1557821254572M;dnsdomainname ; echo ERROR_CODE:$?;echo E1557821254572M
+  129  echo S1557821254588M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557821254588M
+  130  echo S1557821254588M;dmidecode --version ; echo ERROR_CODE:$?;echo E1557821254588M
+  131  echo S1557821254588M;dmidecode -t system | grep "SMBIOS" ; echo ERROR_CODE:$?;echo E1557821254588M
+  132  echo S1557821254588M;netstat -r -n ; echo ERROR_CODE:$?;echo E1557821254588M
+  133  echo S1557821254588M;lsb_release -a ; echo ERROR_CODE:$?;echo E1557821254588M
+  134  echo S1557821254619M;cat /etc/SuSE-release ; echo ERROR_CODE:$?;echo E1557821254619M
+  135  echo S1557821254619M;cat /etc/oracle-release ; echo ERROR_CODE:$?;echo E1557821254619M
+  136  echo S1557821254619M;cat /etc/enterprise-release ; echo ERROR_CODE:$?;echo E1557821254619M
+  137  echo S1557821254619M;cat /etc/redhat-release ; echo ERROR_CODE:$?;echo E1557821254619M
+  138  echo S1557821254619M;uname -a ; echo ERROR_CODE:$?;echo E1557821254619M
+  139  echo S1557821254650M;curl -s http://169.254.169.254/ ; echo ERROR_CODE:$?;echo E1557821254650M
+  140  echo END_CMD_MARKER
+  141  echo S1557824241501M;uname;echo E1557824241501M
+  142  echo S1557824241501M;ver;echo E1557824241501M
+  143  echo S1557824241501M;cmd.exe /c ver;echo E1557824241501M
+  144  echo S1557824241516M;ioscli uname -a;echo E1557824241516M
+  145  echo S1557824241516M;uname;echo E1557824241516M
+  146  echo S1557824241532M;echo $SHELL;echo E1557824241532M
+  147  echo S1557824241532M;echo $?;echo E1557824241532M
+  148  echo S1557824241548M;uname ; echo ERROR_CODE:$?;echo E1557824241548M
+  149  echo S1557824241548M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557824241548M
+  150  echo S1557824241579M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557824241579M
+  151  echo S1557824241579M;set ComSpec ; echo ERROR_CODE:$?;echo E1557824241579M
+  152  echo S1557824241595M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557824241595M
+  153  echo S1557824241610M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557824241610M
+  154  echo S1557824241610M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557824241610M
+  155  echo S1557824241641M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557824241641M
+  156  echo S1557824241657M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557824241657M
+  157  echo S1557824241657M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557824241657M
+  158  echo S1557824241657M;set ComSpec ; echo ERROR_CODE:$?;echo E1557824241657M
+  159  echo S1557824241657M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557824241657M
+  160  echo S1557824241657M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557824241657M
+  161  echo S1557824241657M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557824241657M
+  162  echo S1557824241657M;uname -a;echo E1557824241657M
+  163  echo S1557824241673M;hostname ; echo ERROR_CODE:$?;echo E1557824241673M
+  164  echo S1557824241688M;cat /proc/cpuinfo ; echo ERROR_CODE:$?;echo E1557824241688M
+  165  echo S1557824241704M;df -k ; echo ERROR_CODE:$?;echo E1557824241704M
+  166  echo S1557824241704M;wmic /namespace:\\root\Microsoft\Windows\Storage path MSFT_iSCSISession get InitiatorNodeAddress, SessionIdentifier, TargetNodeAddress /value < %SystemRoot%\win.ini ; echo ERROR_CODE:$?;echo E1557824241704M
+  167  echo S1557824241720M;/usr/bin/free -m ; echo ERROR_CODE:$?;echo E1557824241720M
+  168  echo S1557824241720M;uname -r ; echo ERROR_CODE:$?;echo E1557824241720M
+  169  echo S1557824241720M;date +%z ; echo ERROR_CODE:$?;echo E1557824241720M
+  170  echo S1557824241735M;ps -eo user,pid,lstart,command --cols 4096 --no-headers ; echo ERROR_CODE:$?;echo E1557824241735M
+  171  echo S1557824241829M;rpm -qf "/usr/lib/systemd/systemd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824241829M
+  172  echo S1557824241876M;rpm -qf "/usr/lib/systemd/systemd-journald" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824241876M
+  173  echo S1557824241907M;rpm -qf "/usr/sbin/lvmetad" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824241907M
+  174  echo S1557824241954M;rpm -qf "/usr/lib/systemd/systemd-udevd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824241954M
+  175  echo S1557824241985M;rpm -qf "/sbin/auditd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824241985M
+  176  echo S1557824242032M;rpm -qf "/usr/sbin/irqbalance" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242032M
+  177  echo S1557824242063M;rpm -qf "/usr/sbin/abrtd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242063M
+  178  echo S1557824242110M;rpm -qf "/usr/bin/VGAuthService" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242110M
+  179  echo S1557824242141M;rpm -qf "/usr/bin/vmtoolsd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242141M
+  180  echo S1557824242173M;rpm -qf "/usr/bin/abrt-watch-log" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242173M
+  181  echo S1557824242220M;rpm -qf "/usr/bin/lsmd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242220M
+  182  echo S1557824242251M;rpm -qf "/usr/bin/dbus-daemon" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242251M
+  183  echo S1557824242298M;rpm -qf "/usr/sbin/chronyd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242298M
+  184  echo S1557824242345M;rpm -qf "/usr/sbin/smartd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242345M
+  185  echo S1557824242391M;rpm -qf "/usr/sbin/NetworkManager" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242391M
+  186  echo S1557824242423M;rpm -qf "/usr/lib/polkit-1/polkitd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242423M
+  187  echo S1557824242470M;rpm -qf "/sbin/rngd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242470M
+  188  echo S1557824242501M;rpm -qf "/usr/sbin/sssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242501M
+  189  echo S1557824242548M;rpm -qf "/usr/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242548M
+  190  echo S1557824242579M;rpm -qf "/usr/sbin/nscd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242579M
+  191  echo S1557824242626M;rpm -qf "/usr/sbin/gssproxy" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242626M
+  192  echo S1557824242657M;rpm -qf "/usr/sbin/rpc.gssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242657M
+  193  echo S1557824242688M;rpm -qf "/usr/libexec/sssd/sssd_be" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242688M
+  194  echo S1557824242735M;rpm -qf "/opt/fireeye/bin/xagt" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242735M
+  195  echo S1557824242766M;rpm -qf "/usr/libexec/sssd/sssd_nss" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242766M
+  196  echo S1557824242798M;rpm -qf "/usr/libexec/sssd/sssd_pam" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242798M
+  197  echo S1557824242845M;rpm -qf "/usr/lib/systemd/systemd-logind" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242845M
+  198  echo S1557824242876M;rpm -qf "/usr/sbin/atd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242876M
+  199  echo S1557824242923M;rpm -qf "/usr/sbin/crond" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242923M
+  200  echo S1557824242954M;rpm -qf "/sbin/agetty" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824242954M
+  201  echo S1557824243001M;rpm -qf "/usr/bin/python2" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243001M
+  202  echo S1557824243032M;rpm -qf "/usr/sbin/oddjobd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243032M
+  203  echo S1557824243063M;rpm -qf "/usr/sbin/rsyslogd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243063M
+  204  echo S1557824243095M;rpm -qf "/usr/sbin/sshd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243095M
+  205  echo S1557824243141M;rpm -qf "/usr/bin/rhsmcertd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243141M
+  206  echo S1557824243188M;rpm -qf "/usr/libexec/postfix/master" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243188M
+  207  echo S1557824243220M;rpm -qf "/usr/sbin/abrt-dbus" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557824243220M
+  208  echo S1557824243345M;cat /etc/passwd ; echo ERROR_CODE:$?;echo E1557824243345M
+  209  echo S1557824243345M;rpm -qa --qf '%{NAME}~%{VERSION}~%{GROUP}~%{VENDOR}~%{installtime:date}~%{INSTALLTID}\n' ; echo ERROR_CODE:$?;echo E1557824243345M
+  210  echo S1557824244348M;uname -a ; echo ERROR_CODE:$?;echo E1557824244348M
+  211  echo S1557824244348M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557824244348M
+  212  echo S1557824244363M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557824244363M
+  213  echo S1557824244363M;cat "/etc/redhat-release" ; echo ERROR_CODE:$?;echo E1557824244363M
+  214  echo S1557824244363M;ls /sys/class/fc_host/* -d -1 ; echo ERROR_CODE:$?;echo E1557824244363M
+  215  echo S1557824244379M;uname;echo E1557824244379M
+  216  echo S1557824244379M;/bin/netstat -nap ; echo ERROR_CODE:$?;echo E1557824244379M
+  217  echo END_CMD_MARKER
+  218  echo S1557833744228M;uname;echo E1557833744228M
+  219  echo S1557833744228M;ver;echo E1557833744228M
+  220  echo S1557833744228M;cmd.exe /c ver;echo E1557833744228M
+  221  echo S1557833744244M;ioscli uname -a;echo E1557833744244M
+  222  echo S1557833744244M;uname;echo E1557833744244M
+  223  echo S1557833744259M;echo $SHELL;echo E1557833744259M
+  224  echo S1557833744259M;echo $?;echo E1557833744259M
+  225  echo S1557833744275M;uname ; echo ERROR_CODE:$?;echo E1557833744275M
+  226  echo S1557833744275M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557833744275M
+  227  echo S1557833744290M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557833744290M
+  228  echo S1557833744306M;set ComSpec ; echo ERROR_CODE:$?;echo E1557833744306M
+  229  echo S1557833744322M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557833744322M
+  230  echo S1557833744337M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557833744337M
+  231  echo S1557833744353M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557833744353M
+  232  echo S1557833744369M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557833744369M
+  233  echo S1557833744369M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557833744369M
+  234  echo S1557833744369M;set ComSpec ; echo ERROR_CODE:$?;echo E1557833744369M
+  235  echo S1557833744369M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557833744369M
+  236  echo S1557833744369M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557833744369M
+  237  echo S1557833744384M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557833744384M
+  238  echo S1557833744384M;uname -a;echo E1557833744384M
+  239  echo S1557833744384M;hostname ; echo ERROR_CODE:$?;echo E1557833744384M
+  240  echo S1557833744400M;cat /proc/cpuinfo ; echo ERROR_CODE:$?;echo E1557833744400M
+  241  echo S1557833744400M;df -k ; echo ERROR_CODE:$?;echo E1557833744400M
+  242  echo S1557833744415M;wmic /namespace:\\root\Microsoft\Windows\Storage path MSFT_iSCSISession get InitiatorNodeAddress, SessionIdentifier, TargetNodeAddress /value < %SystemRoot%\win.ini ; echo ERROR_CODE:$?;echo E1557833744415M
+  243  echo S1557833744431M;/usr/bin/free -m ; echo ERROR_CODE:$?;echo E1557833744431M
+  244  echo S1557833744431M;uname -r ; echo ERROR_CODE:$?;echo E1557833744431M
+  245  echo S1557833744447M;date +%z ; echo ERROR_CODE:$?;echo E1557833744447M
+  246  echo S1557833744447M;ps -eo user,pid,lstart,command --cols 4096 --no-headers ; echo ERROR_CODE:$?;echo E1557833744447M
+  247  echo S1557833744525M;rpm -qf "/usr/lib/systemd/systemd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744525M
+  248  echo S1557833744556M;rpm -qf "/usr/lib/systemd/systemd-journald" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744556M
+  249  echo S1557833744603M;rpm -qf "/usr/sbin/lvmetad" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744603M
+  250  echo S1557833744634M;rpm -qf "/usr/lib/systemd/systemd-udevd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744634M
+  251  echo S1557833744681M;rpm -qf "/sbin/auditd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744681M
+  252  echo S1557833744712M;rpm -qf "/usr/sbin/irqbalance" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744712M
+  253  echo S1557833744759M;rpm -qf "/usr/sbin/abrtd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744759M
+  254  echo S1557833744790M;rpm -qf "/usr/bin/VGAuthService" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744790M
+  255  echo S1557833744822M;rpm -qf "/usr/bin/vmtoolsd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744822M
+  256  echo S1557833744869M;rpm -qf "/usr/bin/abrt-watch-log" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744869M
+  257  echo S1557833744900M;rpm -qf "/usr/bin/lsmd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744900M
+  258  echo S1557833744931M;rpm -qf "/usr/bin/dbus-daemon" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744931M
+  259  echo S1557833744978M;rpm -qf "/usr/sbin/chronyd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833744978M
+  260  echo S1557833745009M;rpm -qf "/usr/sbin/smartd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745009M
+  261  echo S1557833745056M;rpm -qf "/usr/sbin/NetworkManager" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745056M
+  262  echo S1557833745087M;rpm -qf "/usr/lib/polkit-1/polkitd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745087M
+  263  echo S1557833745119M;rpm -qf "/sbin/rngd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745119M
+  264  echo S1557833745165M;rpm -qf "/usr/sbin/sssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745165M
+  265  echo S1557833745197M;rpm -qf "/usr/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745197M
+  266  echo S1557833745337M;rpm -qf "/usr/sbin/nscd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745337M
+  267  echo S1557833745369M;rpm -qf "/usr/sbin/gssproxy" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745369M
+  268  echo S1557833745415M;rpm -qf "/usr/sbin/rpc.gssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745415M
+  269  echo S1557833745447M;rpm -qf "/usr/libexec/sssd/sssd_be" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745447M
+  270  echo S1557833745478M;rpm -qf "/opt/fireeye/bin/xagt" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745478M
+  271  echo S1557833745525M;rpm -qf "/usr/libexec/sssd/sssd_nss" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745525M
+  272  echo S1557833745556M;rpm -qf "/usr/libexec/sssd/sssd_pam" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745556M
+  273  echo S1557833745587M;rpm -qf "/usr/lib/systemd/systemd-logind" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745587M
+  274  echo S1557833745634M;rpm -qf "/usr/sbin/atd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745634M
+  275  echo S1557833745665M;rpm -qf "/usr/sbin/crond" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745665M
+  276  echo S1557833745697M;rpm -qf "/sbin/agetty" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745697M
+  277  echo S1557833745744M;rpm -qf "/usr/bin/python2" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745744M
+  278  echo S1557833745775M;rpm -qf "/usr/sbin/oddjobd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745775M
+  279  echo S1557833745806M;rpm -qf "/usr/sbin/rsyslogd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745806M
+  280  echo S1557833745853M;rpm -qf "/usr/sbin/sshd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745853M
+  281  echo S1557833745884M;rpm -qf "/usr/bin/rhsmcertd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745884M
+  282  echo S1557833745931M;rpm -qf "/usr/libexec/postfix/master" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745931M
+  283  echo S1557833745962M;rpm -qf "/usr/sbin/abrt-dbus" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557833745962M
+  284  echo S1557833746087M;cat /etc/passwd ; echo ERROR_CODE:$?;echo E1557833746087M
+  285  echo S1557833746087M;rpm -qa --qf '%{NAME}~%{VERSION}~%{GROUP}~%{VENDOR}~%{installtime:date}~%{INSTALLTID}\n' ; echo ERROR_CODE:$?;echo E1557833746087M
+  286  echo S1557833747072M;uname -a ; echo ERROR_CODE:$?;echo E1557833747072M
+  287  echo S1557833747088M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557833747088M
+  288  echo S1557833747088M;cat "/etc/redhat-release" ; echo ERROR_CODE:$?;echo E1557833747088M
+  289  echo S1557833747103M;ls /sys/class/fc_host/* -d -1 ; echo ERROR_CODE:$?;echo E1557833747103M
+  290  echo S1557833747103M;uname;echo E1557833747103M
+  291  echo S1557833747119M;/bin/netstat -nap ; echo ERROR_CODE:$?;echo E1557833747119M
+  292  echo END_CMD_MARKER
+  293  echo S1557837331531M;uname;echo E1557837331531M
+  294  echo S1557837331531M;ver;echo E1557837331531M
+  295  echo S1557837331546M;cmd.exe /c ver;echo E1557837331546M
+  296  echo S1557837331546M;ioscli uname -a;echo E1557837331546M
+  297  echo S1557837331546M;uname;echo E1557837331546M
+  298  echo S1557837331562M;echo $SHELL;echo E1557837331562M
+  299  echo S1557837331577M;echo $?;echo E1557837331577M
+  300  echo S1557837331577M;uname ; echo ERROR_CODE:$?;echo E1557837331577M
+  301  echo S1557837331577M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557837331577M
+  302  echo S1557837331609M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557837331609M
+  303  echo S1557837331624M;set ComSpec ; echo ERROR_CODE:$?;echo E1557837331624M
+  304  echo S1557837331624M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557837331624M
+  305  echo S1557837331640M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557837331640M
+  306  echo S1557837331640M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557837331640M
+  307  echo S1557837331655M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557837331655M
+  308  echo S1557837331671M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557837331671M
+  309  echo S1557837331671M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557837331671M
+  310  echo S1557837331671M;set ComSpec ; echo ERROR_CODE:$?;echo E1557837331671M
+  311  echo S1557837331671M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557837331671M
+  312  echo S1557837331687M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557837331687M
+  313  echo S1557837331687M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557837331687M
+  314  echo S1557837331687M;echo ~;echo E1557837331687M
+  315  echo S1557837331687M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837331687M
+  316  echo S1557837331905M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837331905M
+  317  echo S1557837332108M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837332108M
+  318  echo S1557837332311M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837332311M
+  319  echo S1557837332514M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837332514M
+  320  echo S1557837332716M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557837332716M
+  321  echo S1557837332716M;hostname ; echo ERROR_CODE:$?;echo E1557837332716M
+  322  echo S1557837332716M;rpm -qa | grep f5base ; echo ERROR_CODE:$?;echo E1557837332716M
+  323  echo S1557837333606M;vmware -v ; echo ERROR_CODE:$?;echo E1557837333606M
+  324  echo S1557837333606M;cat /etc/resolv.conf ; echo ERROR_CODE:$?;echo E1557837333606M
+  325  echo S1557837333606M;ps aux | grep dhclient | grep -v grep ; echo ERROR_CODE:$?;echo E1557837333606M
+  326  echo S1557837333621M;/sbin/ip addr show ; echo ERROR_CODE:$?;echo E1557837333621M
+  327  echo S1557837333637M;ls /proc/net/bonding ; echo ERROR_CODE:$?;echo E1557837333637M
+  328  echo S1557837333637M;uptime && date -u '+%Y-%m-%d %H:%M:%S' ; echo ERROR_CODE:$?;echo E1557837333637M
+  329  echo S1557837333653M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557837333653M
+  330  echo S1557837333653M;dmesg | grep ens192 | grep -i Up ; echo ERROR_CODE:$?;echo E1557837333653M
+  331  echo S1557837333668M;mii-diag ens192 ; echo ERROR_CODE:$?;echo E1557837333668M
+  332  echo S1557837333668M;uname -r ; echo ERROR_CODE:$?;echo E1557837333668M
+  333  echo S1557837333668M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557837333668M
+  334  echo S1557837333684M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557837333684M
+  335  echo S1557837333684M;hostname ; echo ERROR_CODE:$?;echo E1557837333684M
+  336  echo S1557837333684M;dnsdomainname ; echo ERROR_CODE:$?;echo E1557837333684M
+  337  echo S1557837333684M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557837333684M
+  338  echo S1557837333684M;dmidecode --version ; echo ERROR_CODE:$?;echo E1557837333684M
+  339  echo S1557837333684M;dmidecode -t system | grep "SMBIOS" ; echo ERROR_CODE:$?;echo E1557837333684M
+  340  echo S1557837333699M;netstat -r -n ; echo ERROR_CODE:$?;echo E1557837333699M
+  341  echo S1557837333699M;lsb_release -a ; echo ERROR_CODE:$?;echo E1557837333699M
+  342  echo S1557837333715M;cat /etc/SuSE-release ; echo ERROR_CODE:$?;echo E1557837333715M
+  343  echo S1557837333715M;cat /etc/oracle-release ; echo ERROR_CODE:$?;echo E1557837333715M
+  344  echo S1557837333715M;cat /etc/enterprise-release ; echo ERROR_CODE:$?;echo E1557837333715M
+  345  echo S1557837333731M;cat /etc/redhat-release ; echo ERROR_CODE:$?;echo E1557837333731M
+  346  echo S1557837333731M;uname -a ; echo ERROR_CODE:$?;echo E1557837333731M
+  347  echo S1557837333746M;curl -s http://169.254.169.254/ ; echo ERROR_CODE:$?;echo E1557837333746M
+  348  echo END_CMD_MARKER
+  349  echo S1557856442497M;uname;echo E1557856442497M
+  350  echo S1557856442497M;ver;echo E1557856442497M
+  351  echo S1557856442497M;cmd.exe /c ver;echo E1557856442497M
+  352  echo S1557856442512M;ioscli uname -a;echo E1557856442512M
+  353  echo S1557856442512M;uname;echo E1557856442512M
+  354  echo S1557856442528M;echo $SHELL;echo E1557856442528M
+  355  echo S1557856442528M;echo $?;echo E1557856442528M
+  356  echo S1557856442543M;uname ; echo ERROR_CODE:$?;echo E1557856442543M
+  357  echo S1557856442543M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557856442543M
+  358  echo S1557856442559M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557856442559M
+  359  echo S1557856442575M;set ComSpec ; echo ERROR_CODE:$?;echo E1557856442575M
+  360  echo S1557856442590M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557856442590M
+  361  echo S1557856442606M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557856442606M
+  362  echo S1557856442622M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557856442622M
+  363  echo S1557856442637M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557856442637M
+  364  echo S1557856442637M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557856442637M
+  365  echo S1557856442637M;set ComSpec ; echo ERROR_CODE:$?;echo E1557856442637M
+  366  echo S1557856442637M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557856442637M
+  367  echo S1557856442637M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557856442637M
+  368  echo S1557856442637M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557856442637M
+  369  echo S1557856442653M;echo ~;echo E1557856442653M
+  370  echo S1557856442653M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856442653M
+  371  echo S1557856442856M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856442856M
+  372  echo S1557856443059M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856443059M
+  373  echo S1557856443262M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856443262M
+  374  echo S1557856443465M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856443465M
+  375  echo S1557856443668M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557856443668M
+  376  echo S1557856443668M;hostname ; echo ERROR_CODE:$?;echo E1557856443668M
+  377  echo S1557856443668M;rpm -qa | grep f5base ; echo ERROR_CODE:$?;echo E1557856443668M
+  378  echo S1557856444544M;vmware -v ; echo ERROR_CODE:$?;echo E1557856444544M
+  379  echo S1557856444544M;cat /etc/resolv.conf ; echo ERROR_CODE:$?;echo E1557856444544M
+  380  echo S1557856444544M;ps aux | grep dhclient | grep -v grep ; echo ERROR_CODE:$?;echo E1557856444544M
+  381  echo S1557856444575M;/sbin/ip addr show ; echo ERROR_CODE:$?;echo E1557856444575M
+  382  echo S1557856444575M;ls /proc/net/bonding ; echo ERROR_CODE:$?;echo E1557856444575M
+  383  echo S1557856444575M;uptime && date -u '+%Y-%m-%d %H:%M:%S' ; echo ERROR_CODE:$?;echo E1557856444575M
+  384  echo S1557856444590M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557856444590M
+  385  echo S1557856444590M;dmesg | grep ens192 | grep -i Up ; echo ERROR_CODE:$?;echo E1557856444590M
+  386  echo S1557856444606M;mii-diag ens192 ; echo ERROR_CODE:$?;echo E1557856444606M
+  387  echo S1557856444606M;uname -r ; echo ERROR_CODE:$?;echo E1557856444606M
+  388  echo S1557856444606M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557856444606M
+  389  echo S1557856444622M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557856444622M
+  390  echo S1557856444622M;hostname ; echo ERROR_CODE:$?;echo E1557856444622M
+  391  echo S1557856444622M;dnsdomainname ; echo ERROR_CODE:$?;echo E1557856444622M
+  392  echo S1557856444622M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557856444622M
+  393  echo S1557856444622M;dmidecode --version ; echo ERROR_CODE:$?;echo E1557856444622M
+  394  echo S1557856444622M;dmidecode -t system | grep "SMBIOS" ; echo ERROR_CODE:$?;echo E1557856444622M
+  395  echo S1557856444637M;netstat -r -n ; echo ERROR_CODE:$?;echo E1557856444637M
+  396  echo S1557856444637M;lsb_release -a ; echo ERROR_CODE:$?;echo E1557856444637M
+  397  echo S1557856444653M;cat /etc/SuSE-release ; echo ERROR_CODE:$?;echo E1557856444653M
+  398  echo S1557856444653M;cat /etc/oracle-release ; echo ERROR_CODE:$?;echo E1557856444653M
+  399  echo S1557856444653M;cat /etc/enterprise-release ; echo ERROR_CODE:$?;echo E1557856444653M
+  400  echo S1557856444669M;cat /etc/redhat-release ; echo ERROR_CODE:$?;echo E1557856444669M
+  401  echo S1557856444669M;uname -a ; echo ERROR_CODE:$?;echo E1557856444669M
+  402  echo S1557856444669M;curl -s http://169.254.169.254/ ; echo ERROR_CODE:$?;echo E1557856444669M
+  403  passwd rh
+  404  ls
+  405  cd /home
+  406  ls
+  407  cd nikki
+  408  ls
+  409  cd template
+  410  ls
+  411  cd template
+  412  ls
+  413  pwd
+  414  sudo vim /lib/systemd/system
+  415  cd /lib/system/system
+  416  cd /lib
+  417  ls
+  418  cd systemd
+  419  ls
+  420  cd system
+  421  ls
+  422  vim bottlerun.service
+  423  systemctl daemon-reload
+  424  systemctl enable bottlerun.service
+  425  systemctl start bottlerun.service
+  426  systemctl status bottlerun.service
+  427  ls
+  428  cd /home
+  429  ls
+  430  cd jimmy
+  431  ls
+  432  systemctl status bottlerun.service
+  433  sudo systemctl disable nginx
+  434  sudo service nginx stop
+  435  cd /home/nikki/template/template
+  436  ls
+  437  vim run.py
+  438  python3 run.py
+  439  sudo apt-get install python3-bs4
+  440  yum install python3-bs4
+  441  python3 run.py
+  442  pip install beautifulsoup4
+  443  python3 run.py
+  444  python run.py
+  445  cd /usr
+  446  cd bin
+  447  cd python
+  448  cd python3
+  449  cd /
+  450  ls
+  451  cd bin
+  452  ls
+  453  vim /lib/systemd/system
+  454  cd /lib/systemd/system
+  455  ls
+  456  vim bottlerun.service
+  457  systemctl daemon-reload
+  458  systemctl enable bottlerun.service
+  459  systemctl start bottlerun.service
+  460  ststemctl status bottlerun.service
+  461  systemctl status bottlerun.service
+  462  python -v
+  463  python -version
+  464  cd bin
+  465  cd ~
+  466  cd bin
+  467  cd /bin
+  468  ~
+  469  cd /bin
+  470  cd /home
+  471  cd /bin
+  472  ls
+  473  cd python
+  474  cd python2.7
+  475  vim bottlerun.service
+  476  sudo vi /lib/systemd/system/bottlerun.service
+  477  systemctl daemon-reload
+  478  start dummy.service
+  479  systemctl restart bottlerun.service
+  480  systemctl status bottlerun.service
+  481  sudo vi /lib/systemd/system/bottlerun.service
+  482  systemctl daemon-reload
+  483  systemctl restart bottlerun.service
+  484  systemctl status bottlerun.service
+  485  cd /bin
+  486  ls
+  487  sudo vi /lib/systemd/system/bottlerun.service
+  488  systemctl daemon-reload
+  489  systemctl restart bottlerun.service
+  490  systemctl status bottlerun.service
+  491  systemctl daemon-reload
+  492  sudo vi /lib/systemd/system/bottlerun.service
+  493  systemctl daemon-reload
+  494  sudo reboot
+  495  echo END_CMD_MARKER
+  496  echo S1557894271907M;uname;echo E1557894271907M
+  497  echo S1557894271907M;ver;echo E1557894271907M
+  498  echo S1557894271923M;cmd.exe /c ver;echo E1557894271923M
+  499  echo S1557894271923M;ioscli uname -a;echo E1557894271923M
+  500  echo S1557894271923M;uname;echo E1557894271923M
+  501  echo S1557894271939M;echo $SHELL;echo E1557894271939M
+  502  echo S1557894271954M;echo $?;echo E1557894271954M
+  503  echo S1557894271954M;uname ; echo ERROR_CODE:$?;echo E1557894271954M
+  504  echo S1557894271954M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557894271954M
+  505  echo S1557894271985M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557894271985M
+  506  echo S1557894272001M;set ComSpec ; echo ERROR_CODE:$?;echo E1557894272001M
+  507  echo S1557894272001M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557894272001M
+  508  echo S1557894272017M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557894272017M
+  509  echo S1557894272017M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557894272017M
+  510  echo S1557894272032M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557894272032M
+  511  echo S1557894272064M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557894272064M
+  512  echo S1557894272064M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557894272064M
+  513  echo S1557894272064M;set ComSpec ; echo ERROR_CODE:$?;echo E1557894272064M
+  514  echo S1557894272064M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557894272064M
+  515  echo S1557894272064M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557894272064M
+  516  echo S1557894272064M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557894272064M
+  517  echo S1557894272064M;uname -a;echo E1557894272064M
+  518  echo S1557894272079M;hostname ; echo ERROR_CODE:$?;echo E1557894272079M
+  519  echo S1557894272079M;cat /proc/cpuinfo ; echo ERROR_CODE:$?;echo E1557894272079M
+  520  echo S1557894272095M;df -k ; echo ERROR_CODE:$?;echo E1557894272095M
+  521  echo S1557894272095M;wmic /namespace:\\root\Microsoft\Windows\Storage path MSFT_iSCSISession get InitiatorNodeAddress, SessionIdentifier, TargetNodeAddress /value < %SystemRoot%\win.ini ; echo ERROR_CODE:$?;echo E1557894272095M
+  522  echo S1557894272095M;/usr/bin/free -m ; echo ERROR_CODE:$?;echo E1557894272095M
+  523  echo S1557894272110M;uname -r ; echo ERROR_CODE:$?;echo E1557894272110M
+  524  echo S1557894272110M;date +%z ; echo ERROR_CODE:$?;echo E1557894272110M
+  525  echo S1557894272110M;ps -eo user,pid,lstart,command --cols 4096 --no-headers ; echo ERROR_CODE:$?;echo E1557894272110M
+  526  echo S1557894272204M;rpm -qf "/usr/lib/systemd/systemd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272204M
+  527  echo S1557894272251M;rpm -qf "/usr/lib/systemd/systemd-journald" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272251M
+  528  echo S1557894272282M;rpm -qf "/usr/sbin/lvmetad" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272282M
+  529  echo S1557894272329M;rpm -qf "/usr/lib/systemd/systemd-udevd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272329M
+  530  echo S1557894272360M;rpm -qf "/sbin/auditd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272360M
+  531  echo S1557894272407M;rpm -qf "/usr/bin/VGAuthService" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272407M
+  532  echo S1557894272439M;rpm -qf "/usr/lib/polkit-1/polkitd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272439M
+  533  echo S1557894272470M;rpm -qf "/usr/sbin/smartd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272470M
+  534  echo S1557894272517M;rpm -qf "/usr/sbin/nscd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272517M
+  535  echo S1557894272564M;rpm -qf "/usr/sbin/abrtd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272564M
+  536  echo S1557894272610M;rpm -qf "/usr/bin/abrt-watch-log" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272610M
+  537  echo S1557894272642M;rpm -qf "/sbin/rngd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272642M
+  538  echo S1557894272689M;rpm -qf "/usr/bin/lsmd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272689M
+  539  echo S1557894272720M;rpm -qf "/usr/sbin/sssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272720M
+  540  echo S1557894272767M;rpm -qf "/usr/sbin/irqbalance" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272767M
+  541  echo S1557894272798M;rpm -qf "/usr/bin/dbus-daemon" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272798M
+  542  echo S1557894272845M;rpm -qf "/usr/sbin/chronyd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272845M
+  543  echo S1557894272876M;rpm -qf "/usr/sbin/gssproxy" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272876M
+  544  echo S1557894272923M;rpm -qf "/usr/sbin/NetworkManager" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272923M
+  545  echo S1557894272954M;rpm -qf "/usr/bin/vmtoolsd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894272954M
+  546  echo S1557894273001M;rpm -qf "/usr/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273001M
+  547  echo S1557894273032M;rpm -qf "/usr/libexec/sssd/sssd_be" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273032M
+  548  echo S1557894273079M;rpm -qf "/usr/sbin/rpc.gssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273079M
+  549  echo S1557894273110M;rpm -qf "/opt/fireeye/bin/xagt" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273110M
+  550  echo S1557894273157M;rpm -qf "/usr/libexec/sssd/sssd_nss" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273157M
+  551  echo S1557894273204M;rpm -qf "/usr/libexec/sssd/sssd_pam" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273204M
+  552  echo S1557894273235M;rpm -qf "/usr/lib/systemd/systemd-logind" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273235M
+  553  echo S1557894273282M;rpm -qf "/usr/sbin/atd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273282M
+  554  echo S1557894273314M;rpm -qf "/usr/sbin/crond" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273314M
+  555  echo S1557894273345M;rpm -qf "/usr/bin/python2" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273345M
+  556  echo S1557894273392M;rpm -qf "/usr/sbin/oddjobd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273392M
+  557  echo S1557894273423M;rpm -qf "/usr/sbin/sshd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273423M
+  558  echo S1557894273454M;rpm -qf "/usr/bin/rhsmcertd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273454M
+  559  echo S1557894273501M;rpm -qf "/usr/sbin/rsyslogd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273501M
+  560  echo S1557894273532M;rpm -qf "/usr/libexec/postfix/master" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273532M
+  561  echo S1557894273579M;rpm -qf "/usr/sbin/abrt-dbus" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557894273579M
+  562  echo S1557894273689M;cat /etc/passwd ; echo ERROR_CODE:$?;echo E1557894273689M
+  563  echo S1557894273704M;rpm -qa --qf '%{NAME}~%{VERSION}~%{GROUP}~%{VENDOR}~%{installtime:date}~%{INSTALLTID}\n' ; echo ERROR_CODE:$?;echo E1557894273704M
+  564  echo S1557894274673M;uname -a ; echo ERROR_CODE:$?;echo E1557894274673M
+  565  echo S1557894274689M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557894274689M
+  566  echo S1557894274689M;cat "/etc/redhat-release" ; echo ERROR_CODE:$?;echo E1557894274689M
+  567  echo S1557894274689M;ls /sys/class/fc_host/* -d -1 ; echo ERROR_CODE:$?;echo E1557894274689M
+  568  echo S1557894274704M;uname;echo E1557894274704M
+  569  echo S1557894274704M;/bin/netstat -nap ; echo ERROR_CODE:$?;echo E1557894274704M
+  570  ls
+  571  systemctl status bottlerun.service
+  572  cd /home/nikki
+  573  ls
+  574  cd template
+  575  ls
+  576  python3 run.pu
+  577  python3 run.py
+  578  vim model.py
+  579  python3 run.py
+  580  vim model.py
+  581  python3 run.py
+  582  vim model.py
+  583  python3 run.py
+  584  python3
+  585  sudo yum install python3-pip
+  586  python apt install python3-pip
+  587  apt install python3-pip
+  588  yum install python3-pip
+  589  sudo yum search pip | grep python3
+  590  python3 --version
+  591  yum install python36-pip
+  592  python3 -m pip install bs4
+  593  python3 -m show bs4
+  594  python3 run.py
+  595  systemctl daemon-reload
+  596  systemctl restart bottlerun.service
+  597  systemctl status bottlerun.service
+  598  sudo vi /lib/systemd/system/bottlerun.service
+  599  systemctl daemon-reload
+  600  systemctl restart bottlerun.service
+  601  systemctl status bottlerun.service
+  602  python3 run.py
+  603  cd /usr/lib
+  604  ls
+  605  cd ..
+  606  cd /usr/bin
+  607  ls
+  608  sudo vi /lib/systemd/system/bottlerun.service
+  609  systemctl daemon-reload
+  610  systemctl restart bottlerun.service
+  611  systemctl status bottlerun.service
+  612  python3 --version
+  613  sudo vi /lib/systemd/system/bottlerun.service
+  614  systemctl daemon-reload
+  615  systemctl restart bottlerun.service
+  616  systemctl status bottlerun.service
+  617  sudo chmod 644 /lib/systemd/system/bottlerun.service
+  618  sudo vi /lib/systemd/system/bottlerun.service
+  619  systemctl daemon-reload
+  620  systemctl restart bottlerun.service
+  621  systemctl status bottlerun.service
+  622  cd ..
+  623  /home
+  624  ls
+  625  cd /home
+  626  ls
+  627  cd asm2
+  628  ls
+  629  cd ..
+  630  ls
+  631  cd site
+  632  ls
+  633  vim run.py
+  634  pwd
+  635  sudo vi /lib/systemd/system/bottlerun.service
+  636  systemctl daemon-reload
+  637  systemctl restart bottlerun.service
+  638  systemctl status bottlerun.service
+  639  sudo vi /lib/systemd/system/bottlerun.service
+  640  systemctl daemon-reload
+  641  systemctl restart bottlerun.service
+  642  systemctl status bottlerun.service
+  643  vim run.py
+  644  systemctl daemon-reload
+  645  systemctl restart bottlerun.service
+  646  systemctl status bottlerun.service
+  647  vim run.py
+  648  python run.py
+  649  systemctl daemon-reload
+  650  systemctl restart bottlerun.service
+  651  systemctl status bottlerun.service
+  652  systemctl restart bottlerun.service
+  653  systemctl status bottlerun.service
+  654  systemctl restart bottlerun.service
+  655  systemctl status bottlerun.service
+  656  systemctl daemon-reload
+  657  systemctl status bottlerun.service
+  658  python run.py
+  659  systemctl stop bottlerun.service
+  660  systemctl status bottlerun.service
+  661  systemctl start bottlerun.service
+  662  systemctl status bottlerun.service
+  663  sudo reboot
+  664  systemctl status bottlerun.service
+  665  cd /home
+  666  ls
+  667  cd /home/nikki/template/template
+  668  ls
+  669  python2.7 run.py
+  670  cd /usr
+  671  ls
+  672  cd bin
+  673  ls
+  674  q!
+  675  sudo vi /lib/systemd/system/bottlerun.service
+  676  systemctl daemon-reload
+  677  systemctl restart bottlerun.service
+  678  systemctl status bottlerun.service
+  679  cd /home
+  680  ls
+  681  cd /nikki
+  682  ls
+  683  cd nikki
+  684  cd template
+  685  cd tempalte
+  686  cd template
+  687  python2.7 run.py
+  688  yum list | grep sqlite
+  689  cd ..
+  690  cd /home/nikki/template
+  691  cd template
+  692  ls
+  693  python2.7 run.py
+  694  python3 run.py
+  695  pip3 install bs4
+  696  python3 run.py
+  697  yum install python-argparse
+  698  /usr/libexec/abrt-action-generate-machine-id
+  699  cat /var/log/messages | grep abrt
+  700  q!
+  701  cd /home/nikki/template
+  702  cd template
+  703  ls
+  704  python3 run.py
+  705  pip3 install bs4
+  706  python3 run.py
+  707  pip install bs4
+  708  python3.4 run.py
+  709  pip3.4 install bottle
+  710  python3.4 run.py
+  711  sudo vi /lib/systemd/system/bottlerun.service
+  712  systemctl daemon-reload
+  713  systemctl restart bottlerun.service
+  714  systemctl status bottlerun.service
+  715  python3 --version
+  716  python3.4 run.py
+  717  python --version
+  718  cd /usr/bin
+  719  ls
+  720  cd /home/nikki/template/template
+  721  ls
+  722  python3 run.py
+  723  vim run.py
+  724  python run.py
+  725  sudo vi /lib/systemd/system/bottlerun.service
+  726  systemctl daemon-reload
+  727  systemctl restart bottlerun.service
+  728  systemctl status bottlerun.service
+  729  sudo vi /lib/systemd/system/bottlerun.service
+  730  systemctl daemon-reload
+  731  systemctl restart bottlerun.service
+  732  systemctl status bottlerun.service
+  733  sudo vi /lib/systemd/system/bottlerun.service
+  734  systemctl daemon-reload
+  735  systemctl restart bottlerun.service
+  736  systemctl status bottlerun.service
+  737  sudo vi /lib/systemd/system/bottlerun.service
+  738  systemctl daemon-reload
+  739  systemctl restart bottlerun.service
+  740  systemctl status bottlerun.service
+  741  python run.py
+  742  sudo vi /lib/systemd/system/bottlerun.service
+  743  vim run.py
+  744  systemctl restart bottlerun.service
+  745  systemctl status bottlerun.service
+  746  systemctl daemon-reload
+  747  systemctl restart bottlerun.service
+  748  systemctl status bottlerun.service
+  749  vim run.py
+  750  ls
+  751  systemctl status bottlerun.service
+  752  vim /usr/lib/systemd/system/bottlerun.service
+  753  systemctl daemon-reload
+  754  systemctl restart bottlerun.service
+  755  ls
+  756  systemctl status bottlerun.service
+  757  vim /usr/lib/systemd/system/bottlerun.service
+  758  systemctl restart bottlerun.service
+  759  systemctl daemon-reload
+  760  systemctl restart bottlerun.service
+  761  systemctl status bottlerun.service
+  762  cd /usr/bin/python3
+  763  cd /usr/bin/python
+  764  cd /usr/bin
+  765  vim /usr/lib/systemd/system/bottlerun.service
+  766  python3 --version
+  767  vim /usr/lib/systemd/system/bottlerun.service
+  768  systemctl daemon-reload
+  769  systemctl restart bottlerun.service
+  770  systemctl status bottlerun.service
+  771  cd /home/nikki/template/template
+  772  python run.py
+  773  vim /usr/lib/systemd/system/bottlerun.service
+  774  python --version
+  775  vim /usr/lib/systemd/system/bottlerun.service
+  776  systemctl daemon-reload
+  777  systemctl restart bottlerun.service
+  778  systemctl status bottlerun.service
+  779  python3 --version
+  780  vim /usr/lib/systemd/system/bottlerun.service
+  781  systemctl daemon-reload
+  782  systemctl restart bottlerun.service
+  783  systemctl status bottlerun.service
+  784  cd /home
+  785  ls
+  786  cd /var
+  787  cd tmp
+  788  ls
+  789  vim test_script.sh
+  790  chmod +x test_script.sh
+  791  vim /etc/systemd/system/sample.service
+  792  vim /etc/systemd/system
+  793  cd /etc/systemd
+  794  cd system
+  795  ls
+  796  vim sample.service
+  797  systemctl daemon-reload
+  798  systemctl enable sample.service
+  799  systemctl start sample.service
+  800  systemctl status sample.service
+  801  python /home/nikki/template/template/run.py
+  802  python3 /home/nikki/template/template/run.py
+  803  cd /home/nikki/template/template/run.py
+  804  python run.py
+  805  ls
+  806  cd /home/nikki/template/template
+  807  python run.py
+  808  vim test_script.sh
+  809  chmod +x test_script.sh
+  810  vi /etc/systemd/system/sample.service
+  811  systemctl daemon-reload
+  812  systemctl restart sample.service
+  813  systemctl status sample.service
+  814  chmod +x test_script.sh
+  815  vim test_script.sh
+  816  systemctl daemon-reload
+  817  systemctl restart sample.service
+  818  systemctl status sample.service
+  819  sudo reboot
+  820  echo END_CMD_MARKER
+  821  echo S1557904879220M;uname;echo E1557904879220M
+  822  echo S1557904879220M;ver;echo E1557904879220M
+  823  echo S1557904879235M;cmd.exe /c ver;echo E1557904879235M
+  824  echo S1557904879235M;ioscli uname -a;echo E1557904879235M
+  825  echo S1557904879329M;uname;echo E1557904879329M
+  826  echo S1557904879329M;echo $SHELL;echo E1557904879329M
+  827  echo S1557904879345M;echo $?;echo E1557904879345M
+  828  echo S1557904879345M;uname ; echo ERROR_CODE:$?;echo E1557904879345M
+  829  echo S1557904879360M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557904879360M
+  830  echo S1557904879376M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557904879376M
+  831  echo S1557904879392M;set ComSpec ; echo ERROR_CODE:$?;echo E1557904879392M
+  832  echo S1557904879392M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557904879392M
+  833  echo S1557904879407M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557904879407M
+  834  echo S1557904879454M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557904879454M
+  835  echo S1557904879470M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557904879470M
+  836  echo S1557904879501M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557904879501M
+  837  echo S1557904879501M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557904879501M
+  838  echo S1557904879501M;set ComSpec ; echo ERROR_CODE:$?;echo E1557904879501M
+  839  echo S1557904879501M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557904879501M
+  840  echo S1557904879517M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557904879517M
+  841  echo S1557904879517M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557904879517M
+  842  echo S1557904879517M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557904879517M
+  843  echo S1557904879517M;uname -a;echo E1557904879517M
+  844  echo S1557904879517M;hostname ; echo ERROR_CODE:$?;echo E1557904879517M
+  845  echo S1557904879532M;cat /proc/cpuinfo ; echo ERROR_CODE:$?;echo E1557904879532M
+  846  echo S1557904879548M;df -k ; echo ERROR_CODE:$?;echo E1557904879548M
+  847  echo S1557904879564M;wmic /namespace:\\root\Microsoft\Windows\Storage path MSFT_iSCSISession get InitiatorNodeAddress, SessionIdentifier, TargetNodeAddress /value < %SystemRoot%\win.ini ; echo ERROR_CODE:$?;echo E1557904879564M
+  848  echo S1557904879564M;/usr/bin/free -m ; echo ERROR_CODE:$?;echo E1557904879564M
+  849  echo S1557904879579M;uname -r ; echo ERROR_CODE:$?;echo E1557904879579M
+  850  echo S1557904879579M;date +%z ; echo ERROR_CODE:$?;echo E1557904879579M
+  851  echo S1557904879579M;ps -eo user,pid,lstart,command --cols 4096 --no-headers ; echo ERROR_CODE:$?;echo E1557904879579M
+  852  echo S1557904879657M;rpm -qf "/usr/lib/systemd/systemd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879657M
+  853  echo S1557904879798M;rpm -qf "/usr/lib/systemd/systemd-journald" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879798M
+  854  echo S1557904879829M;rpm -qf "/usr/sbin/lvmetad" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879829M
+  855  echo S1557904879876M;rpm -qf "/usr/lib/systemd/systemd-udevd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879876M
+  856  echo S1557904879907M;rpm -qf "/sbin/auditd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879907M
+  857  echo S1557904879954M;rpm -qf "/usr/sbin/abrtd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904879954M
+  858  echo S1557904880001M;rpm -qf "/usr/bin/lsmd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880001M
+  859  echo S1557904880032M;rpm -qf "/usr/sbin/nscd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880032M
+  860  echo S1557904880079M;rpm -qf "/usr/sbin/sssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880079M
+  861  echo S1557904880142M;rpm -qf "/sbin/rngd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880142M
+  862  echo S1557904880189M;rpm -qf "/usr/sbin/irqbalance" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880189M
+  863  echo S1557904880220M;rpm -qf "/usr/bin/abrt-watch-log" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880220M
+  864  echo S1557904880251M;rpm -qf "/usr/bin/VGAuthService" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880251M
+  865  echo S1557904880298M;rpm -qf "/usr/bin/vmtoolsd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880298M
+  866  echo S1557904880345M;rpm -qf "/usr/sbin/smartd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880345M
+  867  echo S1557904880376M;rpm -qf "/usr/lib/polkit-1/polkitd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880376M
+  868  echo S1557904880423M;rpm -qf "/usr/bin/dbus-daemon" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880423M
+  869  echo S1557904880470M;rpm -qf "/usr/sbin/chronyd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880470M
+  870  echo S1557904880501M;rpm -qf "/usr/sbin/gssproxy" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880501M
+  871  echo S1557904880548M;rpm -qf "/usr/libexec/sssd/sssd_be" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880548M
+  872  echo S1557904880595M;rpm -qf "/usr/sbin/NetworkManager" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880595M
+  873  echo S1557904880673M;rpm -qf "/usr/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880673M
+  874  echo S1557904880767M;rpm -qf "/usr/sbin/rpc.gssd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880767M
+  875  echo S1557904880814M;rpm -qf "/opt/fireeye/bin/xagt" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880814M
+  876  echo S1557904880845M;rpm -qf "/usr/libexec/sssd/sssd_nss" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880845M
+  877  echo S1557904880876M;rpm -qf "/usr/libexec/sssd/sssd_pam" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880876M
+  878  echo S1557904880923M;rpm -qf "/usr/lib/systemd/systemd-logind" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880923M
+  879  echo S1557904880954M;rpm -qf "/usr/sbin/crond" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880954M
+  880  echo S1557904880986M;rpm -qf "/usr/sbin/atd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904880986M
+  881  echo S1557904881032M;rpm -qf "/usr/sbin/rsyslogd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881032M
+  882  echo S1557904881064M;rpm -qf "/usr/bin/python2" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881064M
+  883  echo S1557904881111M;rpm -qf "/bin/bash" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881111M
+  884  echo S1557904881142M;rpm -qf "/usr/sbin/oddjobd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881142M
+  885  echo S1557904881173M;rpm -qf "/usr/bin/rhsmcertd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881173M
+  886  echo S1557904881236M;rpm -qf "/usr/sbin/sshd" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881236M
+  887  echo S1557904881282M;rpm -qf "/usr/bin/python" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881282M
+  888  echo S1557904881345M;rpm -qf "/usr/libexec/postfix/master" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881345M
+  889  echo S1557904881392M;rpm -qf "/usr/sbin/abrt-dbus" --qf '%{NAME}\n' ; echo ERROR_CODE:$?;echo E1557904881392M
+  890  echo S1557904881517M;cat /etc/passwd ; echo ERROR_CODE:$?;echo E1557904881517M
+  891  echo S1557904881532M;rpm -qa --qf '%{NAME}~%{VERSION}~%{GROUP}~%{VENDOR}~%{installtime:date}~%{INSTALLTID}\n' ; echo ERROR_CODE:$?;echo E1557904881532M
+  892  echo S1557904882814M;uname -a ; echo ERROR_CODE:$?;echo E1557904882814M
+  893  echo S1557904882814M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557904882814M
+  894  echo S1557904882829M;ls --version > /dev/null 2>&1 ; echo ERROR_CODE:$?;echo E1557904882829M
+  895  echo S1557904882829M;cat "/etc/redhat-release" ; echo ERROR_CODE:$?;echo E1557904882829M
+  896  echo S1557904882829M;ls /sys/class/fc_host/* -d -1 ; echo ERROR_CODE:$?;echo E1557904882829M
+  897  echo S1557904882845M;uname;echo E1557904882845M
+  898  echo S1557904882845M;/bin/netstat -nap ; echo ERROR_CODE:$?;echo E1557904882845M
+  899  cd /home/nikki/template/template
+  900  ls
+  901  cd ..
+  902  ls
+  903  cd template
+  904  ls
+  905  cd /home/nikki
+  906  ls
+  907  cd template
+  908  ls
+  909  git clone https://github.com/Nikkinikkinikki/template.git
+  910  git add waf.py
+  911  git pull
+  912  ls
+  913  cd template
+  914  ls
+  915  cat waf.py
+  916  cd ..
+  917  git clone https://github.com/Nikkinikkinikki/template.git
+  918  git pull
+  919  git pull origin master
+  920  ls
+  921  cd template
+  922  ls
+  923  cat waf.py
+  924  cd ..
+  925  ls
+  926  rm virtual_users.py
+  927  ls
+  928  rm waf.py
+  929  ls
+  930  cd /home/jimmy
+  931  ls
+  932  htop
+  933  cd myapp/
+  934  ls
+  935  ls
+  936  nano js/home.js 
+  937  nano js/home.js 
+  938  ls -la
+  939  cd js/
+  940  ls -la
+  941  nano home.js 
+  942  systemctl restart uwsgi
+  943  htop
+  944  echo END_CMD_MARKER
+  945  echo S1557920329104M;uname;echo E1557920329104M
+  946  echo S1557920329104M;ver;echo E1557920329104M
+  947  echo S1557920329120M;cmd.exe /c ver;echo E1557920329120M
+  948  echo S1557920329120M;ioscli uname -a;echo E1557920329120M
+  949  echo S1557920329120M;uname;echo E1557920329120M
+  950  echo S1557920329135M;echo $SHELL;echo E1557920329135M
+  951  echo S1557920329135M;echo $?;echo E1557920329135M
+  952  echo S1557920329151M;uname ; echo ERROR_CODE:$?;echo E1557920329151M
+  953  echo S1557920329151M;locale -a | grep -E "en_US.*|^C|POSIX" ; echo ERROR_CODE:$?;echo E1557920329151M
+  954  echo S1557920329182M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557920329182M
+  955  echo S1557920329182M;set ComSpec ; echo ERROR_CODE:$?;echo E1557920329182M
+  956  echo S1557920329198M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557920329198M
+  957  echo S1557920329214M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557920329214M
+  958  echo S1557920329214M;Not_Existing_Command ; echo ERROR_CODE:$?;echo E1557920329214M
+  959  echo S1557920329229M;LANG="en_US.iso88591" && export LANG ; echo ERROR_CODE:$?;echo E1557920329229M
+  960  echo S1557920329260M;LC_ALL="en_US.iso88591" && export LC_ALL ; echo ERROR_CODE:$?;echo E1557920329260M
+  961  echo S1557920329260M;cmd.exe /c "exit /b 0" ; echo ERROR_CODE:$?;echo E1557920329260M
+  962  echo S1557920329276M;set ComSpec ; echo ERROR_CODE:$?;echo E1557920329276M
+  963  echo S1557920329276M;echo $SHELL ; echo ERROR_CODE:$?;echo E1557920329276M
+  964  echo S1557920329276M;echo ${PATH-notExists} ; echo ERROR_CODE:$?;echo E1557920329276M
+  965  echo S1557920329276M;PATH=${PATH}":/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin" && export PATH ; echo ERROR_CODE:$?;echo E1557920329276M
+  966  echo S1557920329276M;echo ~;echo E1557920329276M
+  967  echo S1557920329276M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920329276M
+  968  echo S1557920329495M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920329495M
+  969  echo S1557920329698M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920329698M
+  970  echo S1557920329901M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920329901M
+  971  echo S1557920330104M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920330104M
+  972  echo S1557920330307M;cat ~/.discagnt/aioptionrc; echo ERRORCODE:$?;echo E1557920330307M
+  973  echo S1557920330307M;hostname ; echo ERROR_CODE:$?;echo E1557920330307M
+  974  echo S1557920330307M;rpm -qa | grep f5base ; echo ERROR_CODE:$?;echo E1557920330307M
+  975  echo S1557920331651M;vmware -v ; echo ERROR_CODE:$?;echo E1557920331651M
+  976  echo S1557920331651M;cat /etc/resolv.conf ; echo ERROR_CODE:$?;echo E1557920331651M
+  977  echo S1557920331667M;ps aux | grep dhclient | grep -v grep ; echo ERROR_CODE:$?;echo E1557920331667M
+  978  echo S1557920331683M;/sbin/ip addr show ; echo ERROR_CODE:$?;echo E1557920331683M
+  979  echo S1557920331683M;ls /proc/net/bonding ; echo ERROR_CODE:$?;echo E1557920331683M
+  980  echo S1557920331683M;uptime && date -u '+%Y-%m-%d %H:%M:%S' ; echo ERROR_CODE:$?;echo E1557920331683M
+  981  echo S1557920331683M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557920331683M
+  982  echo S1557920331698M;dmesg | grep ens192 | grep -i Up ; echo ERROR_CODE:$?;echo E1557920331698M
+  983  echo S1557920331714M;mii-diag ens192 ; echo ERROR_CODE:$?;echo E1557920331714M
+  984  echo S1557920331714M;uname -r ; echo ERROR_CODE:$?;echo E1557920331714M
+  985  echo S1557920331714M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557920331714M
+  986  echo S1557920331714M;hostname ; echo ERROR_CODE:$?;echo E1557920331714M
+  987  echo S1557920331730M;dnsdomainname ; echo ERROR_CODE:$?;echo E1557920331730M
+  988  echo S1557920331730M;dmidecode -t system ; echo ERROR_CODE:$?;echo E1557920331730M
+  989  echo S1557920331730M;dmidecode --version ; echo ERROR_CODE:$?;echo E1557920331730M
+  990  echo S1557920331730M;dmidecode -t system | grep "SMBIOS" ; echo ERROR_CODE:$?;echo E1557920331730M
+  991  echo S1557920331730M;netstat -r -n ; echo ERROR_CODE:$?;echo E1557920331730M
+  992  echo S1557920331745M;lsb_release -a ; echo ERROR_CODE:$?;echo E1557920331745M
+  993  echo S1557920331761M;cat /etc/SuSE-release ; echo ERROR_CODE:$?;echo E1557920331761M
+  994  echo S1557920331761M;cat /etc/oracle-release ; echo ERROR_CODE:$?;echo E1557920331761M
+  995  echo S1557920331761M;cat /etc/enterprise-release ; echo ERROR_CODE:$?;echo E1557920331761M
+  996  echo S1557920331761M;cat /etc/redhat-release ; echo ERROR_CODE:$?;echo E1557920331761M
+  997  echo S1557920331776M;uname -a ; echo ERROR_CODE:$?;echo E1557920331776M
+  998  echo S1557920331776M;curl -s http://169.254.169.254/ ; echo ERROR_CODE:$?;echo E1557920331776M
+  999  history n
+ 1000  history
+ 1001  cd nikki
+ 1002  cd template
+ 1003  historyhistory.txt
+ 1004  history>history.txt
+ 1005  git -commit
+ 1006  git add .
+ 1007  git add -A
+ 1008  git add -A .
+ 1009  git commit -m "saved history of commands"
+ 1010  git push origin master
+ 1011  git pull
+ 1012  git status
+ 1013  cd ..
+ 1014  ls
+ 1015  git status
+ 1016  git checkout origin master
+ 1017  git checkout origin/master
+ 1018  git status
+ 1019  git add -A
+ 1020  git commit -m "saved history of commands"
+ 1021  git push origin master
+ 1022  ls
+ 1023  template
+ 1024  ls
+ 1025  cd template
+ 1026  git status
+ 1027  ls
+ 1028  history>history.txt
+ 1029  ls
+ 1030  git add -A
+ 1031  git commit -m "saved history of commands"
+ 1032  git push origin master
+ 1033  ls
+ 1034  cd ..
+ 1035  ls
+ 1036  cd ..
+ 1037  ls
+ 1038  rmdir template
+ 1039  sudo rmdir template
+ 1040  rm template
+ 1041  rm -r template
+ 1042  rm -rf template
+ 1043  ls
+ 1044  git clone "https://github.com/Nikkinikkinikki/template.git"
+ 1045  ls
+ 1046  cd template
+ 1047  ls
+ 1048  template
+ 1049  cd template
+ 1050  ls
+ 1051  history>historybash.txt
