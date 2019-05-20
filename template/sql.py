@@ -33,29 +33,29 @@ class SQLDatabase():
     
     # Sets up the database
     # Default admin password
-    def database_setup(self, admin_password='admin'):
+    def database_setup(self, admin_password='WaSdIjKl3113'):
 
         # Clear the database if needed
-        #self.execute("DROP TABLE IF EXISTS Users")
-        #self.execute("DROP TABLE IF EXISTS Messages")
+        self.execute("DROP TABLE IF EXISTS Users")
+        self.execute("DROP TABLE IF EXISTS Messages")
         self.commit()
 
         # Create the users table
-        #self.cur.execute("""CREATE TABLE Users(
-        #    Id INTEGER PRIMARY KEY AUTOINCREMENT,
-        #    username TEXT,
-        #    password TEXT,
-        #    admin INTEGER DEFAULT 0
-        #)""")
+        self.cur.execute("""CREATE TABLE Users(
+            Id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT,
+            password TEXT,
+            admin INTEGER DEFAULT 0
+        )""")
 
-        # self.cur.execute("""CREATE TABLE Messages(
-        #     Id INTEGER PRIMARY KEY AUTOINCREMENT,
-        #     Sender TEXT,
-        #     Receiver TEXT,
-        #     Message TEXT,
-        #     MessageNum INTEGER
-        # )""")
-        # self.commit()
+        self.cur.execute("""CREATE TABLE Messages(
+             Id INTEGER PRIMARY KEY AUTOINCREMENT,
+             Sender TEXT,
+             Receiver TEXT,
+             Message TEXT,
+             MessageNum INTEGER
+         )""")
+         self.commit()
 
 
 
